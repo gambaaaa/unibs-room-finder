@@ -712,6 +712,7 @@ body[data-theme="wipeout"] {
       text-overflow: clip;
       overflow-wrap: anywhere;
       word-break: normal;
+        line-height: 1.3;
     }
 
     .lesson-row .lesson-professor > span {
@@ -719,6 +720,7 @@ body[data-theme="wipeout"] {
       max-width: 100%;
       white-space: normal;
       overflow-wrap: anywhere;
+        line-height: 1.3;
     }
 
     .unavailable {
