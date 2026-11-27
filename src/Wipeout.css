@@ -104,10 +104,13 @@ body[data-theme="wipeout"] {
   .app-footer span,
   .wipeout-building-label,
   .wipeout-building-label *,
-  .wipeout-room-label span,
+  .wipeout-room-label,
+  .wipeout-room-label *,
+  .room-header p,
   .schedule-container :is(.lesson-time, .lesson-course, .lesson-professor, .unavailable),
   .date-selector input[type="date"],
-  .professor-search input,
+  .professor-search,
+  .professor-search *,
   .professor-page .lesson,
   .professor-page .lesson * {
     font-family: var(--font-alt) !important;
@@ -529,7 +532,7 @@ body[data-theme="wipeout"] {
     overflow-wrap: anywhere;
 
     & strong {
-      font-size: 1.25rem;
+      font-size: 0.95rem;
       font-weight: normal;
     }
 
@@ -749,6 +752,10 @@ body[data-theme="wipeout"] {
       color: var(--ink);
     }
 
+    .header {
+      margin-left: var(--indent) !important;
+    }
+
     /* Lezioni più larghe, colonna orario più ampia */
     .lesson {
       width: 70% !important;
@@ -779,42 +786,42 @@ body[data-theme="wipeout"] {
     padding-top: 0 !important;
   }
 
-  .professor-search {
-    position: relative;
-    width: 50%;
-    padding: 45px;
+.professor-search {
+  position: relative;
+  width: 50%;
+  padding: 45px 0;
+  margin: 50px 0 50px var(--indent) !important;
 
-    @media (max-width: 900px) {
-      width: 100%;
-      padding: 30px 0;
-      box-sizing: border-box;
-    }
-
-    > input {
-      width: 100%;
-      padding: 18px 22px;
-      box-sizing: border-box;
-      background: transparent;
-      border: 1px solid var(--ink);
-      border-radius: 2px;
-      font-size: 1.1rem;
-      outline: none;
-    }
-
-    & input:focus,
-    & input:focus-visible {
-      outline: none !important;
-      box-shadow: none !important;
-      border-color: var(--ink) !important;
-    }
-
-    /* Docente già selezionato */
-    & input:read-only {
-      background: transparent !important;
-      color: var(--ink) !important;
-      caret-color: transparent;
-    }
+  @media (max-width: 900px) {
+    width: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
   }
+
+  > input {
+    width: 100%;
+    padding: 18px 22px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    font-size: 1.1rem;
+    outline: none;
+  }
+
+  & input:focus,
+  & input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--ink) !important;
+  }
+
+  & input:read-only {
+    background: transparent !important;
+    color: var(--ink) !important;
+    caret-color: transparent;
+  }
+}
 
   .professor-results {
     position: absolute;

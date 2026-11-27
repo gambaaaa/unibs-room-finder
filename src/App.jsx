@@ -629,7 +629,6 @@ function ProfessorPage() {
         <input
           type="text"
           value={ricerca}
-          readOnly={!!docenteSelezionato}
           onChange={(event) => {
             setRicerca(event.target.value);
             setDocenteSelezionato(null);
@@ -712,7 +711,7 @@ function ProfessorPage() {
               <div className="lesson-list">
                 {impegni.length === 0 ? (
                   <p className="no-events">
-                    Nessun impegno trovato per questa data.
+                    
                   </p>
                 ) : (
                   impegni
@@ -847,7 +846,7 @@ function App() {
       </Routes>
 
       <footer className="app-footer">
-        <span className="app-footer-left">WIPEOUT THEME 1.0.4</span>
+        <span className="app-footer-left">WIPEOUT THEME 1.0.5</span>
         <span className="app-footer-right">GAMBA XI | 26</span>
       </footer>
     </div>
