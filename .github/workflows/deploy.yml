@@ -1,9 +1,9 @@
-
 name: Deploy React to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -38,6 +38,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build
+        run: |
+          echo "Contenuto della cartella dist:"
+          ls -lah ./dist
+          test -f ./dist/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -49,4 +55,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
