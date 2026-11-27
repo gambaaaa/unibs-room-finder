@@ -1363,3 +1363,20 @@ body[data-theme="wipeout"] .professor-page .lesson-professor {
 body[data-theme="wipeout"] .professor-page .lesson-row {
   justify-items: start;
 }
+
+/* BARRA RICERCA PROFESSORE SELEZIONATO */
+
+body[data-theme="wipeout"] .professor-search input {
+  font-family: "Fusion", sans-serif !important;
+  color: #171512;
+}
+
+body[data-theme="wipeout"] .professor-search input:focus {
+  outline: none;
+}
+
+body[data-theme="wipeout"] .professor-search input:read-only {
+  background: #ffffff !important;
+  color: #171512 !important;
+  caret-color: transparent;
+}

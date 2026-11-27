@@ -488,6 +488,7 @@ function ProfessorPage() {
         <input
           type="text"
           value={ricerca}
+          readOnly={!!docenteSelezionato}
           onChange={(event) => {
             setRicerca(event.target.value);
             setDocenteSelezionato(null);
