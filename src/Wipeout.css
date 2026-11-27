@@ -415,12 +415,18 @@ body[data-theme="wipeout"] {
     flex-direction: column;
     gap: 8px;
     min-width: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
     text-decoration: none;
     transition: transform 0.15s ease;
 
     @media (hover: hover) {
       &:hover {
         transform: translateY(-4px);
+        background: transparent;
+        box-shadow: none;
       }
     }
   }
@@ -466,6 +472,23 @@ body[data-theme="wipeout"] {
       font-weight: normal;
       line-height: 1.4;
       opacity: 0.9;
+    }
+
+    & .wipeout-room-status {
+      color: var(--ink);
+      letter-spacing: 1px;
+      opacity: 1;
+    }
+  }
+
+  /* Aula occupata: barre nero / grigio */
+  .wipeout-room.occupata .wipeout-bars {
+    & span:nth-child(1) {
+      background: var(--ink);
+    }
+
+    & span:nth-child(2) {
+      background: #8c8c8c;
     }
   }
 

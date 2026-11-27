@@ -3,7 +3,11 @@ import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import RoomPage from "./RoomPage";
 import edifici from "./data/edifici";
 import docenti from "./data/docenti/docenti.json";
+import "./App.css";
 import "./Wipeout.css";
+
+const API_URL =
+  "https://unibs-public.prod.up.cineca.it/api/Impegni/getImpegniPublic";
 
 // FACOLTÀ E RELATIVI EDIFICI
 const facolta = [
@@ -254,6 +258,75 @@ function BuildingPage() {
     (item) => item.id === buildingId
   );
 
+  // ID delle aule occupate in questo momento
+  const [auleOccupate, setAuleOccupate] = useState(() => new Set());
+
+  useEffect(() => {
+    if (!edificio) return;
+
+    const controller = new AbortController();
+    let impegni = [];
+
+    // Ricalcola quali aule hanno un impegno in corso adesso
+    const aggiornaOccupate = () => {
+      const adesso = Date.now();
+      const occupate = new Set();
+
+      impegni.forEach((impegno) => {
+        const inizio = new Date(impegno.dataInizio).getTime();
+        const fine = new Date(impegno.dataFine).getTime();
+
+        if (inizio <= adesso && adesso < fine) {
+          (impegno.aule || []).forEach((aula) => occupate.add(aula.id));
+        }
+      });
+
+      setAuleOccupate(occupate);
+    };
+
+    async function caricaImpegni() {
+      try {
+        const inizio = new Date();
+        inizio.setHours(0, 0, 0, 0);
+
+        const fine = new Date(inizio);
+        fine.setDate(fine.getDate() + 1);
+
+        const params = new URLSearchParams({
+          edificio: edificio.id,
+          dataInizio: formatDataApi(inizio),
+          dataFine: formatDataApi(fine),
+        });
+
+        const response = await fetch(`${API_URL}?${params}`, {
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Errore HTTP ${response.status}`);
+        }
+
+        const risultato = await response.json();
+        impegni = Array.isArray(risultato) ? risultato : [];
+        aggiornaOccupate();
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          console.error(error);
+        }
+      }
+    }
+
+    caricaImpegni();
+
+    // Aggiorna lo stato ogni 30 secondi senza rifare la richiesta
+    const timer = setInterval(aggiornaOccupate, 30000);
+
+    return () => {
+      controller.abort();
+      clearInterval(timer);
+    };
+  }, [edificio?.id]);
+
   const auleOrdinate = useMemo(() => {
     if (!edificio) return [];
 
@@ -291,19 +364,27 @@ function BuildingPage() {
       <div className="rooms wipeout-rooms">
         {auleOrdinate.map((aula) => {
           const colori = coloriPerAula.get(aula.id || aula.codice);
+          const occupata = auleOccupate.has(aula.id);
 
           return (
             <Link
               to={`/aula/${aula.id}`}
-              className="room room-link wipeout-room"
+              className={`room room-link wipeout-room${
+                occupata ? " occupata" : ""
+              }`}
               key={aula.id}
             >
+              {/* Aula occupata: colori gestiti dal CSS (nero/grigio) */}
               <div className="wipeout-bars">
                 <span
-                  style={{ backgroundColor: colori[0] }}
+                  style={
+                    occupata ? undefined : { backgroundColor: colori[0] }
+                  }
                 />
                 <span
-                  style={{ backgroundColor: colori[1] }}
+                  style={
+                    occupata ? undefined : { backgroundColor: colori[1] }
+                  }
                 />
               </div>
 
@@ -313,6 +394,10 @@ function BuildingPage() {
                 <span>
                   {aula.codice} : {aula.capienza}
                 </span>
+
+                {occupata && (
+                  <span className="wipeout-room-status">Occupata</span>
+                )}
               </div>
             </Link>
           );
