@@ -1380,3 +1380,10 @@ body[data-theme="wipeout"] .professor-search input:read-only {
   color: #171512 !important;
   caret-color: transparent;
 }
+
+body[data-theme="wipeout"] .professor-search input:focus,
+body[data-theme="wipeout"] .professor-search input:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #171512 !important;
+}
