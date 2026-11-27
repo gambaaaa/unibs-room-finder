@@ -671,6 +671,8 @@ body[data-theme="wipeout"] {
       border: 1px solid var(--ink) !important;
       border-radius: 0 !important;
       box-shadow: none !important;
+      min-height: max-content;
+      height: auto;
 
       @media (max-width: 900px) {
         width: 100%;
@@ -680,8 +682,9 @@ body[data-theme="wipeout"] {
     .lesson-row {
       display: grid;
       grid-template-columns: 100px minmax(0, 1fr);
-      align-items: baseline;
+      align-items: start;
       column-gap: 20px;
+      row-gap: 6px;
 
       & > :only-child {
         grid-column: 1 / -1;
@@ -705,14 +708,16 @@ body[data-theme="wipeout"] {
       color: var(--ink) !important;
     }
     
-    /* Permette ai nomi delle aule di andare a capo */
     .lesson-row .lesson-professor {
+      display: block;
+      min-width: 0;
       white-space: normal;
       overflow: visible;
       text-overflow: clip;
       overflow-wrap: anywhere;
       word-break: normal;
-        line-height: 1.3;
+      line-height: 1.6;
+      padding-bottom: 3px;
     }
 
     .lesson-row .lesson-professor > span {
