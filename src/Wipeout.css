@@ -405,13 +405,13 @@ body[data-theme="wipeout"] {
     overflow-wrap: anywhere;
 
     & strong {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
       font-weight: normal;
     }
 
     & span {
       color: var(--ink-soft);
-      font-size: 0.90rem;
+      font-size: 0.95rem;
       opacity: 0.9;
     }
   }
@@ -440,11 +440,15 @@ body[data-theme="wipeout"] {
   /* ---------- Griglia e card aula ---------- */
   .wipeout-rooms {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 28px 24px;
     margin-top: 28px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (max-width: 700px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px 16px;
     }
@@ -523,13 +527,13 @@ body[data-theme="wipeout"] {
     overflow-wrap: anywhere;
 
     & strong {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: normal;
     }
 
     & span {
       color: var(--ink-soft);
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: normal;
       line-height: 1.4;
       opacity: 0.9;
