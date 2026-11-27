@@ -17,10 +17,11 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -40,16 +41,17 @@ jobs:
 
       - name: Verify build
         run: |
-          echo "Contenuto della cartella dist:"
-          ls -lah ./dist
           test -f ./dist/index.html
+          echo "Build verificata correttamente."
+          ls -lah ./dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages
           path: ./dist
 
       - name: Deploy
