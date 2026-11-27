@@ -193,36 +193,42 @@ function FacultyPage() {
   );
 }
 
-
-// Palette di 16 colori ben distinguibili
-const paletteAule = [
-  "#E53935", // Rosso
-  "#1E88E5", // Blu
-  "#43A047", // Verde
-  "#FDD835", // Giallo
-  "#8E24AA", // Viola
-  "#FB8C00", // Arancione
-  "#00ACC1", // Ciano
-  "#D81B60", // Rosa
-  "#7CB342", // Verde lime
-  "#3949AB", // Indaco
-  "#6D4C41", // Marrone
-  "#F4511E", // Arancio scuro
-  "#00897B", // Verde petrolio
-  "#C0CA33", // Lime
-  "#5E35B1", // Viola scuro
-  "#546E7A"  // Grigio blu
-];
-
-// Generazione di tutte le coppie possibili
+// Generazione dei colori assegnati alle aule
 function generaColoriAule(numeroAule) {
-  const coppie = [];
-
-  for (let i = 0; i < paletteAule.length; i++) {
-    for (let j = i + 1; j < paletteAule.length; j++) {
-      coppie.push([paletteAule[i], paletteAule[j]]);
-    }
-  }
+  const coppie = [
+    ["#E53935", "#1E88E5"],
+    ["#43A047", "#8E24AA"],
+    ["#FDD835", "#3949AB"],
+    ["#FB8C00", "#00ACC1"],
+    ["#D81B60", "#6D4C41"],
+    ["#7CB342", "#546E7A"],
+    ["#F06292", "#00897B"],
+    ["#5E35B1", "#C0CA33"],
+    ["#B71C1C", "#26C6DA"],
+    ["#FF7043", "#283593"],
+    ["#9C27B0", "#CDDC39"],
+    ["#1565C0", "#F9A825"],
+    ["#2E7D32", "#EC407A"],
+    ["#6A1B9A", "#FFCA28"],
+    ["#00838F", "#F4511E"],
+    ["#558B2F", "#7E57C2"],
+    ["#AD1457", "#039BE5"],
+    ["#EF6C00", "#3949AB"],
+    ["#00695C", "#F44336"],
+    ["#4527A0", "#FFB300"],
+    ["#827717", "#D32F2F"],
+    ["#0277BD", "#C2185B"],
+    ["#558B2F", "#6D4C41"],
+    ["#5D4037", "#00ACC1"],
+    ["#C62828", "#7E57C2"],
+    ["#00897B", "#FDD835"],
+    ["#AD1457", "#43A047"],
+    ["#283593", "#FF7043"],
+    ["#6D4C41", "#D81B60"],
+    ["#039BE5", "#9C27B0"],
+    ["#F4511E", "#7CB342"],
+    ["#3949AB", "#F06292"]
+  ];
 
   const coloriAssegnati = new Map();
 
@@ -245,7 +251,6 @@ function generaColoriAule(numeroAule) {
 
   return coloriAssegnati;
 }
-
 // PAGINA EDIFICIO: ELENCO AULE
 function BuildingPage() {
 
