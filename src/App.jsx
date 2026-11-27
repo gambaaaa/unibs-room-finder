@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Routes, Route, Link, useParams } from "react-router-dom";
+import { Routes, Route, Link, useParams, useNavigate, Navigate } from "react-router-dom";
 import RoomPage from "./RoomPage";
 import edifici from "./data/edifici";
 import docenti from "./data/docenti/docenti.json";
@@ -128,12 +128,7 @@ function FacultyPage() {
   }, [facultyId]);
 
   if (!selezionata) {
-    return (
-      <main className="container">
-        <h1>Facoltà non trovata</h1>
-        <Link to="/">Torna alla pagina principale</Link>
-      </main>
-    );
+    return <Navigate to="/404" replace />;
   }
 
   return (
@@ -389,12 +384,7 @@ function BuildingPage() {
   }, [edificio?.id]);
 
   if (!edificio) {
-    return (
-      <main className="container">
-        <h1>Edificio non trovato</h1>
-        <Link to="/">Torna alla pagina principale</Link>
-      </main>
-    );
+    return <Navigate to="/404" replace />;
   }
 
   const nomeEdificio = edificio.codice;
@@ -852,13 +842,25 @@ function App() {
         <Route path="/edificio/:buildingId" element={<BuildingPage />} />
         <Route path="/aula/:roomId" element={<RoomPage />} />
         <Route path="/professori" element={<ProfessorPage />} />
+        <Route path="/404" element={<NotFoundPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <footer className="app-footer">
-        <span className="app-footer-left">WIPEOUT THEME 1.0.3</span>
+        <span className="app-footer-left">WIPEOUT THEME 1.0.4</span>
         <span className="app-footer-right">GAMBA XI | 26</span>
       </footer>
     </div>
+  );
+}
+
+function NotFoundPage() {
+  return (
+    <main className="container not-found-page">
+      <Link to="/" className="not-found-link">
+        404.
+      </Link>
+    </main>
   );
 }
 

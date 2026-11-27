@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import edifici from "./data/edifici";
 import { useIndietro } from "./useIndietro";
 
@@ -180,10 +180,7 @@ function RoomPage() {
   }, [data, edificio?.id, roomId]);
 
   if (!aula) {
-    return (
-      <main className="container">
-      </main>
-    );
+    return <Navigate to="/404" replace />;
   }
 
   return (
