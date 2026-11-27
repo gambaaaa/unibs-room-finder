@@ -230,6 +230,7 @@ body[data-theme="wipeout"] {
 
   .home-header h1 {
     margin-left: var(--indent);
+    line-height: 1.3;
   }
 
   .home-menu {

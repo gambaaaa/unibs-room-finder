@@ -453,7 +453,7 @@ function BuildingPage() {
 
                 {statoAule === null && (
                   <span className="wipeout-room-status">
-                    Verifica...
+                    
                   </span>
                 )}
               </div>
