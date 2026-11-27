@@ -3,6 +3,11 @@
    Tutte le regole sono annidate sotto
    body[data-theme="wipeout"] (CSS nesting nativo).
 
+   NOTA: App.css viene caricato e definisce stili per classi come
+   .building-card, .lesson, .room, .panel ecc. I reset (border: none,
+   background: transparent, ...) e gli !important di questo file
+   servono a sovrascriverli: non rimuoverli senza ripulire App.css.
+
    Breakpoint:
      > 1100px  desktop  (rientro 150px, 4 colonne edifici)
      <= 1100px tablet   (rientro 60px,  3 colonne edifici)
@@ -58,10 +63,12 @@ body[data-theme="wipeout"] {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 0;
     min-height: 100vh;
     min-height: 100dvh;
-    margin: 0;
-    padding: 0;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
   }
 
@@ -75,8 +82,11 @@ body[data-theme="wipeout"] {
 
   .container {
     width: 100%;
-    padding-inline: var(--gutter);
+    max-width: none !important;
+    margin: 0 !important;
+    padding-inline: var(--gutter) !important;
     box-sizing: border-box;
+    background: transparent;
   }
 
   /* ---------- Font ----------
@@ -84,7 +94,7 @@ body[data-theme="wipeout"] {
      ereditano); Fusion solo sugli elementi elencati sotto. */
   &,
   & * {
-    font-family: var(--font-main);
+    font-family: var(--font-main) !important;
   }
 
   .system-status,
@@ -98,7 +108,7 @@ body[data-theme="wipeout"] {
   .professor-search input,
   .professor-page .lesson,
   .professor-page .lesson * {
-    font-family: var(--font-alt);
+    font-family: var(--font-alt) !important;
   }
 
   /* ---------- Barra di stato ---------- */
@@ -107,8 +117,13 @@ body[data-theme="wipeout"] {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    max-width: none !important;
+    margin: 0;
     padding: 12px var(--gutter);
     box-sizing: border-box;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 
     @media (max-width: 700px) {
       justify-content: flex-start;
@@ -145,13 +160,17 @@ body[data-theme="wipeout"] {
 
   /* ---------- Titoli ---------- */
   .header {
+    border: none !important;
+    box-shadow: none !important;
     text-align: left;
 
     & h1 {
       width: fit-content;
       max-width: 100%;
       margin-top: clamp(30px, 8vw, 75px);
-      color: var(--ink);
+      color: var(--ink) !important;
+      border: none !important;
+      box-shadow: none !important;
       font-size: clamp(2rem, 9vw, 5rem);
       font-weight: 900;
       text-transform: uppercase;
@@ -165,7 +184,7 @@ body[data-theme="wipeout"] {
   }
 
   & h2 {
-    color: var(--ink);
+    color: var(--ink) !important;
   }
 
   /* ---------- Freccia indietro ---------- */
@@ -190,8 +209,15 @@ body[data-theme="wipeout"] {
 
   /* ---------- Pannelli e messaggi ---------- */
   .panel {
+    position: relative;
     background: var(--bg);
     border: 1px solid var(--bg);
+    border-radius: 2px;
+    box-shadow: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   .empty {
@@ -208,6 +234,10 @@ body[data-theme="wipeout"] {
 
   .home-menu {
     margin-top: clamp(60px, 20vw, 200px);
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 
     & h2 {
       display: none;
@@ -272,6 +302,8 @@ body[data-theme="wipeout"] {
       font-size: clamp(1.6rem, 7vw, 3rem);
       text-transform: uppercase;
       letter-spacing: 1px;
+      border: none !important;
+      box-shadow: none !important;
     }
 
     .wipeout-buildings {
@@ -280,7 +312,7 @@ body[data-theme="wipeout"] {
       column-gap: 12px;
       row-gap: 28px;
       width: 100%;
-      margin-top: 28px;
+      margin: 28px auto 0 !important;
       justify-content: center;
       align-items: start;
 
@@ -303,11 +335,18 @@ body[data-theme="wipeout"] {
     gap: 8px;
     min-width: 0;
     color: var(--ink);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     text-decoration: none;
 
     @media (hover: hover) {
       &:hover {
         transform: translateY(-4px);
+        background: transparent;
+        border: none;
+        box-shadow: none;
       }
     }
 
@@ -418,6 +457,7 @@ body[data-theme="wipeout"] {
     padding: 0;
     background: transparent;
     border: none;
+    border-radius: 0;
     box-shadow: none;
     text-decoration: none;
     transition: transform 0.15s ease;
@@ -455,6 +495,7 @@ body[data-theme="wipeout"] {
     align-items: flex-start;
     gap: 4px;
     width: 100%;
+    padding: 0;
     color: var(--ink);
     text-align: left;
     text-transform: uppercase;
@@ -497,8 +538,9 @@ body[data-theme="wipeout"] {
      ========================================== */
 
   .room-header {
-    margin-inline: var(--indent);
-    text-align: left;
+    align-items: flex-start !important;
+    margin-inline: var(--indent) !important;
+    text-align: left !important;
 
     .back-link {
       margin-bottom: 35px;
@@ -506,7 +548,10 @@ body[data-theme="wipeout"] {
 
     & h1,
     & p {
-      color: var(--ink);
+      width: 100% !important;
+      margin-inline: 0 !important;
+      color: var(--ink) !important;
+      text-align: left !important;
       overflow-wrap: anywhere;
     }
 
@@ -516,8 +561,11 @@ body[data-theme="wipeout"] {
       text-transform: uppercase;
     }
 
+    /* Codice e capienza: 40px più a destra del nome */
     & p {
-      margin-block: clamp(24px, 4vw, 50px) clamp(30px, 5vw, 60px);
+      width: calc(100% - 40px) !important;
+      margin-left: 40px !important;
+      margin-block: clamp(24px, 4vw, 50px) clamp(30px, 5vw, 60px) !important;
       font-size: clamp(1.2rem, 5vw, 2rem);
     }
   }
@@ -533,10 +581,11 @@ body[data-theme="wipeout"] {
     & input[type="date"] {
       width: 170px;
       padding: 0;
-      border: none;
-      outline: none;
-      background: transparent;
-      color: var(--ink);
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      color: var(--ink) !important;
       font-size: 1rem;
       text-align: center;
       cursor: pointer;
@@ -564,7 +613,11 @@ body[data-theme="wipeout"] {
 
   /* ---------- Orario lezioni (aula e professore) ---------- */
   .schedule-container {
-    padding: 0 var(--indent) clamp(60px, 12vw, 150px);
+    padding: 0 var(--indent) clamp(60px, 12vw, 150px) !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 
     .lesson-list {
       display: flex;
@@ -579,7 +632,10 @@ body[data-theme="wipeout"] {
       width: 50%;
       padding: 16px 20px;
       box-sizing: border-box;
-      border: 1px solid var(--ink);
+      background: transparent !important;
+      border: 1px solid var(--ink) !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
 
       @media (max-width: 900px) {
         width: 100%;
@@ -607,7 +663,7 @@ body[data-theme="wipeout"] {
       white-space: nowrap;
       text-overflow: ellipsis;
       font-size: 0.85rem;
-      color: var(--ink);
+      color: var(--ink) !important;
     }
 
     /* Su mobile corsi e docenti vanno a capo invece di essere troncati */
@@ -619,9 +675,14 @@ body[data-theme="wipeout"] {
       }
     }
 
-    .unavailable,
+    .unavailable {
+      color: var(--ink) !important;
+    }
+
     .no-events {
-      color: var(--ink);
+      color: var(--ink) !important;
+      background: transparent !important;
+      border: none !important;
     }
   }
 
@@ -636,10 +697,10 @@ body[data-theme="wipeout"] {
 
     /* Lezioni più larghe, colonna orario più ampia */
     .lesson {
-      width: 70%;
+      width: 70% !important;
 
       @media (max-width: 900px) {
-        width: 100%;
+        width: 100% !important;
       }
     }
 
@@ -653,10 +714,16 @@ body[data-theme="wipeout"] {
         gap: 8px 12px;
       }
     }
+
+    .lesson-time,
+    .lesson-course,
+    .lesson-professor {
+      text-align: left !important;
+    }
   }
 
   .professor-schedule {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 
   .professor-search {
@@ -681,9 +748,17 @@ body[data-theme="wipeout"] {
       outline: none;
     }
 
+    & input:focus,
+    & input:focus-visible {
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: var(--ink) !important;
+    }
+
     /* Docente già selezionato */
     & input:read-only {
-      background: var(--white);
+      background: var(--white) !important;
+      color: var(--ink) !important;
       caret-color: transparent;
     }
   }
