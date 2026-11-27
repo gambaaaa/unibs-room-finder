@@ -47,29 +47,14 @@ body[data-theme="wipeout"] {
 
   @media (max-width: 1100px) {
     --indent: 60px;
-    --bg: #6b6358;
-    background-color: #6b6358 !important;
-
-    #root,
-    .app-shell,
-    .container {
-      background-color: #6b6358 !important;
-    }
   }
 
   @media (max-width: 700px) {
     --gutter: 20px;
     --indent: 0px;
-    background-color: #6b6358 !important;
-
-    #root,
-    .app-shell,
-    .container {
-      background-color: #6b6358 !important;
-    }
   }
 
-  background-color: var(--bg);
+  background-color: #6b6358 !important;
 
   /* ---------- Layout generale ---------- */
   &,
@@ -91,8 +76,10 @@ body[data-theme="wipeout"] {
     overflow-x: hidden;
   }
 
-  #root {
-    background: var(--bg);
+  #root,
+  .app-shell,
+  .container {
+    background-color: #6b6358 !important;
   }
 
   .container {
@@ -225,7 +212,7 @@ body[data-theme="wipeout"] {
   /* ---------- Pannelli e messaggi ---------- */
   .panel {
     position: relative;
-    background: var(--bg);
+    background-color: #6b6358 !important;
     border: 1px solid var(--bg);
     border-radius: 2px;
     box-shadow: none;
@@ -714,8 +701,24 @@ body[data-theme="wipeout"] {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       color: var(--ink) !important;
+    }
+    
+    /* Permette ai nomi delle aule di andare a capo */
+    .lesson-row .lesson-professor {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+
+    .lesson-row .lesson-professor > span {
+      display: block;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
     }
 
     .unavailable {
