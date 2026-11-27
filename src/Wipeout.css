@@ -145,6 +145,8 @@ body[data-theme="wipeout"] {
 
   /* ---------- Titoli ---------- */
   .header {
+    text-align: left;
+
     & h1 {
       width: fit-content;
       max-width: 100%;
@@ -218,6 +220,7 @@ body[data-theme="wipeout"] {
     gap: clamp(20px, 5vw, 32px);
     margin-top: 35px;
     margin-left: var(--indent);
+    text-align: left;
   }
 
   .faculty-list-item {
@@ -493,7 +496,6 @@ body[data-theme="wipeout"] {
     & p {
       margin-block: clamp(24px, 4vw, 50px) clamp(30px, 5vw, 60px);
       font-size: clamp(1.2rem, 5vw, 2rem);
-      margin-left: 40px;
     }
   }
 

@@ -165,9 +165,7 @@ function RoomPage() {
         setImpegni(impegniUnici);
 
       } catch (error) {
-        setErrore(
-          `Impossibile recuperare gli impegni: ${error.message}`
-        );
+
       } finally {
         setLoading(false);
       }
@@ -179,8 +177,6 @@ function RoomPage() {
   if (!aula) {
     return (
       <main className="container">
-        <h1>Aula non trovata</h1>
-        <Link to="/">Torna alla ricerca</Link>
       </main>
     );
   }
