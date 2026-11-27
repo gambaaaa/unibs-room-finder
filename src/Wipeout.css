@@ -449,6 +449,25 @@ body[data-theme="wipeout"] {
     }
   }
 
+  .wipeout-room-h1 {
+    margin-left: var(--indent) !important;
+    padding: 0;
+    width: auto;
+    text-align: left !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    & h1 {
+      color: var(--ink) !important;
+      margin-top: clamp(30px, 8vw, 75px);
+      margin-bottom: 90px;
+      font-size: clamp(2rem, 9vw, 5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
   .wipeout-room {
     display: flex;
     flex-direction: column;
@@ -516,9 +535,18 @@ body[data-theme="wipeout"] {
     }
 
     & .wipeout-room-status {
-      color: var(--ink);
-      letter-spacing: 1px;
-      opacity: 1;
+    margin-top: 5px;
+    color: var(--ink);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 1;
+    }
+
+    & .wipeout-room-status-detail {
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      opacity: 0.85;
     }
   }
 

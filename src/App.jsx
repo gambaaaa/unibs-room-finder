@@ -258,8 +258,20 @@ function BuildingPage() {
     (item) => item.id === buildingId
   );
 
-  // ID delle aule occupate in questo momento
-  const [auleOccupate, setAuleOccupate] = useState(() => new Set());
+  const auleOrdinate = useMemo(() => {
+    if (!edificio) return [];
+
+    return [...edificio.aule].sort((a, b) =>
+      String(a.codice).localeCompare(
+        String(b.codice),
+        "it",
+        { numeric: true, sensitivity: "base" }
+      )
+    );
+  }, [edificio]);
+
+  // Stato delle aule: occupata/libera e orario di cambio stato
+  const [statoAule, setStatoAule] = useState(null);
 
   useEffect(() => {
     if (!edificio) return;
@@ -267,21 +279,56 @@ function BuildingPage() {
     const controller = new AbortController();
     let impegni = [];
 
-    // Ricalcola quali aule hanno un impegno in corso adesso
-    const aggiornaOccupate = () => {
+    const aggiornaStato = () => {
       const adesso = Date.now();
-      const occupate = new Set();
+      const risultati = new Map();
 
-      impegni.forEach((impegno) => {
-        const inizio = new Date(impegno.dataInizio).getTime();
-        const fine = new Date(impegno.dataFine).getTime();
+      edificio.aule.forEach((aula) => {
+        const eventi = impegni
+          .filter((impegno) =>
+            (impegno.aule || []).some(
+              (elemento) => String(elemento.id) === String(aula.id)
+            )
+          )
+          .map((impegno) => ({
+            inizio: new Date(impegno.dataInizio).getTime(),
+            fine: new Date(impegno.dataFine).getTime(),
+          }))
+          .filter((e) => Number.isFinite(e.inizio) && Number.isFinite(e.fine))
+          .sort((a, b) => a.inizio - b.inizio);
 
-        if (inizio <= adesso && adesso < fine) {
-          (impegno.aule || []).forEach((aula) => occupate.add(aula.id));
+        let fineOccupazione = null;
+
+        eventi.forEach((evento) => {
+          if (
+            evento.inizio <= adesso &&
+            adesso < evento.fine
+          ) {
+            fineOccupazione = Math.max(
+              fineOccupazione || 0,
+              evento.fine
+            );
+          }
+        });
+
+        if (fineOccupazione !== null) {
+          risultati.set(String(aula.id), {
+            occupata: true,
+            orario: fineOccupazione,
+          });
+        } else {
+          const prossimo = eventi.find(
+            (evento) => evento.inizio > adesso
+          );
+
+          risultati.set(String(aula.id), {
+            occupata: false,
+            orario: prossimo ? prossimo.inizio : null,
+          });
         }
       });
 
-      setAuleOccupate(occupate);
+      setStatoAule(risultati);
     };
 
     async function caricaImpegni() {
@@ -307,36 +354,30 @@ function BuildingPage() {
         }
 
         const risultato = await response.json();
+
         impegni = Array.isArray(risultato) ? risultato : [];
-        aggiornaOccupate();
+
+        console.log("IMPEGNI EDIFICIO:", impegni);
+        console.log("AULE EDIFICIO:", edificio.aule);
+
+        aggiornaStato();
+
       } catch (error) {
         if (error.name !== "AbortError") {
-          console.error(error);
+          console.error("Errore caricamento aule:", error);
         }
       }
     }
 
     caricaImpegni();
 
-    // Aggiorna lo stato ogni 30 secondi senza rifare la richiesta
-    const timer = setInterval(aggiornaOccupate, 30000);
+    const timer = setInterval(aggiornaStato, 30000);
 
     return () => {
       controller.abort();
       clearInterval(timer);
     };
   }, [edificio?.id]);
-
-  const auleOrdinate = useMemo(() => {
-    if (!edificio) return [];
-
-    return [...edificio.aule].sort((a, b) =>
-      a.codice.localeCompare(b.codice, "it", {
-        numeric: true,
-        sensitivity: "base",
-      })
-    );
-  }, [edificio]);
 
   if (!edificio) {
     return (
@@ -361,10 +402,15 @@ function BuildingPage() {
           ←
       </button>
 
+      <header className="header wipeout-room-h1">
+        <h1>Aule</h1>
+      </header>
+      
       <div className="rooms wipeout-rooms">
         {auleOrdinate.map((aula) => {
           const colori = coloriPerAula.get(aula.id || aula.codice);
-          const occupata = auleOccupate.has(aula.id);
+          const stato = statoAule?.get(String(aula.id));
+          const occupata = stato?.occupata ?? false;
 
           return (
             <Link
@@ -395,8 +441,20 @@ function BuildingPage() {
                   {aula.codice} : {aula.capienza}
                 </span>
 
-                {occupata && (
-                  <span className="wipeout-room-status">Occupata</span>
+                {statoAule !== null && (
+                  <>
+                    <span className="wipeout-room-status">
+                      {occupata ? "Occupata" : "Libera"} {stato?.orario
+                        ? `- ${formatOra(stato.orario)}`
+                        : ""}
+                    </span>
+                  </>
+                )}
+
+                {statoAule === null && (
+                  <span className="wipeout-room-status">
+                    Verifica...
+                  </span>
                 )}
               </div>
             </Link>
@@ -788,8 +846,8 @@ function App() {
       </Routes>
 
       <footer className="app-footer">
-        <span className="app-footer-left">WIPEOUT THEME 1.0</span>
-        <span className="app-footer-right">GAMBA 2026</span>
+        <span className="app-footer-left">WIPEOUT THEME 1.0.2</span>
+        <span className="app-footer-right">GAMBA XI/26</span>
       </footer>
     </div>
   );
