@@ -193,19 +193,28 @@ function FacultyPage() {
   );
 }
 
-// Palette dei colori
+
+// Palette di 16 colori ben distinguibili
 const paletteAule = [
-  "#087E9B", "#F4C51B", "#EF315B", "#F28B17",
-  "#68B9D9", "#B43D75", "#F5A4C1", "#D72B25",
-  "#7B9E45", "#E5B93F", "#5145A0", "#00B8A9",
-  "#E85D04", "#FFBA08", "#3A86FF", "#8338EC",
-  "#D1495B", "#00798C", "#6A994E", "#BC4749",
-  "#00A6A6", "#FF6B35", "#7B2CBF", "#90BE6D",
-  "#F72585", "#4361EE", "#F9C74F", "#577590",
-  "#43AA8B", "#F94144", "#277DA1", "#F3722C"
+  "#E53935", // Rosso
+  "#1E88E5", // Blu
+  "#43A047", // Verde
+  "#FDD835", // Giallo
+  "#8E24AA", // Viola
+  "#FB8C00", // Arancione
+  "#00ACC1", // Ciano
+  "#D81B60", // Rosa
+  "#7CB342", // Verde lime
+  "#3949AB", // Indaco
+  "#6D4C41", // Marrone
+  "#F4511E", // Arancio scuro
+  "#00897B", // Verde petrolio
+  "#C0CA33", // Lime
+  "#5E35B1", // Viola scuro
+  "#546E7A"  // Grigio blu
 ];
 
-// Generazione delle coppie distinte
+// Generazione di tutte le coppie possibili
 function generaColoriAule(numeroAule) {
   const coppie = [];
 
