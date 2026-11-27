@@ -3,7 +3,6 @@ import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
 import RoomPage from "./RoomPage";
 import edifici from "./data/edifici";
 import docenti from "./data/docenti/docenti.json";
-import "./App.css";
 import "./Wipeout.css";
 
 // FACOLTÀ E RELATIVI EDIFICI

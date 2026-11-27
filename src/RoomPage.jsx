@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import edifici from "./data/edifici";
-import "./App.css";
 
 const API_URL =
   "https://unibs-public.prod.up.cineca.it/api/Impegni/getImpegniPublic";

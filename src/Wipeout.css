@@ -1,5 +1,7 @@
 /* ==========================================
-   WIPEOUT 3 - FUTURISTIC INTERFACE
+   WIPEOUT THEME
+   Tutte le regole sono annidate sotto
+   body[data-theme="wipeout"] (CSS nesting nativo).
    ========================================== */
 
 @font-face {
@@ -19,1371 +21,600 @@
 }
 
 body[data-theme="wipeout"] {
-  font-family: "F500 Angular", sans-serif;
-}
-
-/* FONT F500 ANGULAR - TUTTA L'INTERFACCIA WIPEOUT */
-body[data-theme="wipeout"],
-body[data-theme="wipeout"] * {
-  font-family: "F500 Angular", sans-serif !important;
-}
-
-/* INTESTAZIONE E TITOLI */
-
-body[data-theme="wipeout"] .header h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-body[data-theme="wipeout"] .header p {
-  color: #8b9ba5;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1.5px;
-}
-
-body[data-theme="wipeout"] .panel h2 {
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.15rem;
-}
-
-/* PANNELLI */
-
-body[data-theme="wipeout"] .panel {
-  position: relative;
-  background: #6b6358;
-  border: 1px solid #6b6358;
-  border-radius: 2px;
-  box-shadow: none;
-}
-
-body[data-theme="wipeout"] .panel::before {
-  display: none;
-}
-
-/* TESTI NERI SU SFONDO BEIGE */
-body[data-theme="wipeout"] .theme-label {
-  color: #171512;
-}
-
-body[data-theme="wipeout"] .back-link:hover {
-  color: #000000;
-}
-
-/* CAMPI DI RICERCA */
-
-body[data-theme="wipeout"] label {
-  color: #00d9ff;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-body[data-theme="wipeout"] input,
-body[data-theme="wipeout"] select {
-  color: #ffffff;
-  background: #0c1013;
-  border: 1px solid #46545d;
-  border-radius: 2px;
-}
-
-body[data-theme="wipeout"] input:focus,
-body[data-theme="wipeout"] select:focus {
-  outline: none;
-  border-color: #00d9ff;
-  box-shadow: 0 0 8px rgba(0, 217, 255, 0.25);
-}
-
-body[data-theme="wipeout"] input::placeholder {
-  color: #71818a;
-}
-
-/* SEZIONI E CONTATORI */
-
-body[data-theme="wipeout"] .count {
-  color: #171512;
-  background: #6b6358;
-  border: 1px solid #6b6358;
-  border-radius: 2px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
-  padding: 6px 10px;
-}
-
-body[data-theme="wipeout"] .header p {
-  font-family: "Fusion", sans-serif !important;
-  color: #171512;
-}
-
-/* FACOLTÀ */
-
-body[data-theme="wipeout"] .faculty-card {
-  position: relative;
-  color: #ffffff;
-  background: #1b2227;
-  border: 1px solid #3c4951;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-body[data-theme="wipeout"] .faculty-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(
-    135deg,
-    transparent 50%,
-    #ff5722 50%
-  );
-  opacity: 0.8;
-}
-
-body[data-theme="wipeout"] .faculty-card:hover {
-  transform: translateY(-3px);
-  background: #252e34;
-  border-color: #ff5722;
-  box-shadow: 0 0 18px rgba(255, 87, 34, 0.16);
-}
-
-body[data-theme="wipeout"] .faculty-icon {
-  filter: grayscale(0.3);
-}
-
-body[data-theme="wipeout"] .faculty-card h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-body[data-theme="wipeout"] .faculty-card p {
-  color: #9baab2;
-}
-
-/* EDIFICI */
-
-/* EDIFICI */
-body[data-theme="wipeout"] .building-card {
-  color: #171512;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  text-decoration: none;
-}
-
-body[data-theme="wipeout"] .building-card:hover {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  transform: translateY(-4px);
-}
-
-/* Codice e descrizione */
-body[data-theme="wipeout"] .wipeout-building-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: #171512;
-  font-family: "Fusion", sans-serif !important;
-  text-transform: uppercase;
-  line-height: 1.3;
-}
-
-body[data-theme="wipeout"] .wipeout-building-label strong {
-  color: #171512;
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.95rem;
-  font-weight: normal;
-}
-
-body[data-theme="wipeout"] .wipeout-building-label span {
-  color: #29251f;
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.75rem;
-  opacity: 0.9;
-}
-
-body[data-theme="wipeout"] .building-arrow {
-  color: #ff5722;
-}
-
-/* AULE */
-
-body[data-theme="wipeout"] .room {
-  border-bottom: 1px solid #354149;
-}
-
-body[data-theme="wipeout"] .room h3 {
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-body[data-theme="wipeout"] .room p {
-  color: #9baab2;
-}
-
-body[data-theme="wipeout"] .room-link:hover {
-  background: #222d33;
-  box-shadow: inset 3px 0 #ff5722;
-}
-
-body[data-theme="wipeout"] .capacity {
-  color: #83949e;
-  text-transform: uppercase;
-}
-
-body[data-theme="wipeout"] .capacity strong {
-  color: #00d9ff;
-}
-
-/* ORARIO LEZIONI */
-
-body[data-theme="wipeout"] .lesson {
-  background: #1b2227;
-  border: 1px solid #39464e;
-  border-left: 3px solid #00d9ff;
-  border-radius: 2px;
-}
-
-body[data-theme="wipeout"] .lesson-time {
-  color: #ff7448;
-}
-
-body[data-theme="wipeout"] .time-separator {
-  color: #71818a;
-}
-
-body[data-theme="wipeout"] .lesson-info h4 {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-body[data-theme="wipeout"] .lesson-info p {
-  color: #9baab2;
-}
-
-body[data-theme="wipeout"] .no-events {
-  color: #9baab2;
-  background: #1b2227;
-  border: 1px solid #39464e;
-  border-radius: 2px;
-}
-
-body[data-theme="wipeout"] .unavailable {
-  color: #ff5722;
-}
-
-/* MESSAGGI */
-
-body[data-theme="wipeout"] .empty,
-body[data-theme="wipeout"] .info {
-  color: #82929b;
-}
-
-body[data-theme="wipeout"] .error {
-  color: #ff5722;
-}
-
-/* OUTPUT */
-
-body[data-theme="wipeout"] .json-output {
-  color: #00d9ff;
-  background: #0c1013;
-  border: 1px solid #39464e;
-  border-radius: 2px;
-}
-
-/* SWITCH TEMA */
-
-body[data-theme="wipeout"] .theme-bar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  max-width: none !important;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 12px 40px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-body[data-theme="wipeout"] .system-status {
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.7rem;
-  color: #171512;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-body[data-theme="wipeout"] .theme-label,
-body[data-theme="wipeout"] .back-link {
-  color: #171512;
-}
-
-.theme-switch {
-  display: flex;
-  gap: 4px;
-  padding: 4px;
-  background: #111827;
-  border: 1px solid #374151;
-  border-radius: 6px;
-}
-
-.theme-switch button {
-  padding: 8px 13px;
-  color: #9ca3af;
-  background: transparent;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.theme-switch button.active {
-  color: #ffffff;
-  background: #374151;
-}
-
-.theme-switch button:hover {
-  color: #ffffff;
-}
-
-/* SWITCH IN WIPEOUT */
-
-body[data-theme="wipeout"] .theme-switch {
-  background: #0c1013;
-  border: 1px solid #46545d;
-  border-radius: 2px;
-}
-
-body[data-theme="wipeout"] .theme-switch button {
-  color: #82929b;
-  border-radius: 1px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-body[data-theme="wipeout"] .theme-switch button.active {
-  color: #101316;
-  background: #ff5722;
-}
-
-body[data-theme="wipeout"] .theme-switch button:hover {
-  color: #ffffff;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 600px) {
-  .theme-bar {
-    justify-content: space-between;
-    gap: 8px;
-  }
-
-  .theme-switch button {
-    padding: 8px 10px;
-  }
-
-  body[data-theme="wipeout"] .header h1 {
-    font-size: 1.8rem;
-  }
-}
-
-body[data-theme="wipeout"] {
-  background-color: #6b6358;
-}
-
-body[data-theme="wipeout"] .container {
-  background-color: transparent;
-}
-
-/* ========================================
-   WIPEOUT - ELENCO AULE
-   ======================================== */
-
-
-/* ========================================
-   WIPEOUT - ELENCO AULE
-======================================== */
-
-/* Sfondo generale */
-body[data-theme="wipeout"] {
-  background-color: #6b6358;
-}
-
-body[data-theme="wipeout"] html,
-body[data-theme="wipeout"] #root {
-  background: #6b6358;
-  min-height: 100vh;
-}
-
-body[data-theme="wipeout"] .container {
-  background: transparent;
-}
-
-/* Griglia delle aule */
-body[data-theme="wipeout"] .wipeout-rooms {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(190px, 1fr)
-  );
-  gap: 28px 24px;
-  margin-top: 28px;
-}
-
-/* Singola aula */
-body[data-theme="wipeout"] .wipeout-room {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  text-decoration: none;
-  transition: transform 0.15s ease;
-}
-
-body[data-theme="wipeout"] .wipeout-room:hover {
-  transform: translateY(-4px);
-  background: transparent;
-  box-shadow: none;
-}
-
-/* Due barre colorate */
-body[data-theme="wipeout"] .wipeout-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-}
-
-body[data-theme="wipeout"] .wipeout-bars span {
-  display: block;
-  width: 100%;
-  height: 19px;
-  clip-path: polygon(
-    0 0,
-    94% 0,
-    100% 25%,
-    100% 100%,
-    0 100%
-  );
-}
-
-/* Etichette aula */
-body[data-theme="wipeout"] .wipeout-room-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 0;
-  color: #171512;
-  text-transform: uppercase;
-  line-height: 1.3;
-  align-items: flex-start;
-  text-align: left;
-  width: 100%;
-}
-
-/* Codice aula: F500 Angular */
-body[data-theme="wipeout"] .wipeout-room-label strong {
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 1rem;
-  font-weight: normal;
-  color: #171512;
-}
-
-/* Edificio e indirizzo: Fusion */
-body[data-theme="wipeout"] .wipeout-room-label span {
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.75rem;
-  font-weight: normal;
-  color: #29251f;
-  opacity: 0.9;
-  line-height: 1.4;
-}
-
-/* Nasconde la vecchia capienza */
-body[data-theme="wipeout"] .wipeout-room .capacity {
-  display: none;
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  body[data-theme="wipeout"] .wipeout-rooms {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px 16px;
-  }
-
-  body[data-theme="wipeout"] .wipeout-bars span {
-    height: 15px;
-  }
-}
-
-/* ========================================
-   WIPEOUT - ELENCO EDIFICI
-======================================== */
-
-body[data-theme="wipeout"] .wipeout-buildings {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 32px;
-  row-gap: 28px;
-  margin-top: 28px;
-  align-items: start;
-}
-
-body[data-theme="wipeout"] .wipeout-building {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-}
-
-body[data-theme="wipeout"] .wipeout-building:hover {
-  transform: translateY(-4px);
-  background: transparent;
-  box-shadow: none;
-}
-
-/* Simbolo al posto delle livree */
-body[data-theme="wipeout"] .wipeout-building-symbol {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  width: 100%;
-  height: 90px;
-  flex: 0 0 70px;
-
-  padding: 8px 12px;
-  box-sizing: border-box;
-  background: #c4ad75;
-
-  color: #171512;
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 2rem;
-  line-height: 1;
-}
-
-/* Alternanza giallo sabbia / rosso terra */
-/* Alternanza giallo sabbia / rosso terra per righe */
-body[data-theme="wipeout"] .wipeout-building:nth-child(n + 5):nth-child(-n + 8) .wipeout-building-symbol,
-body[data-theme="wipeout"] .wipeout-building:nth-child(n + 13):nth-child(-n + 16) .wipeout-building-symbol,
-body[data-theme="wipeout"] .wipeout-building:nth-child(n + 21):nth-child(-n + 24) .wipeout-building-symbol {
-  background: #a96755;
-}
-
-/* Nome edificio e descrizione */
-body[data-theme="wipeout"] .wipeout-building-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  color: #171512;
-  font-family: "Fusion", sans-serif !important;
-  text-transform: uppercase;
-  line-height: 1.3;
-}
-
-body[data-theme="wipeout"] .wipeout-building-label strong {
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.95rem;
-  font-weight: normal;
-}
-
-body[data-theme="wipeout"] .wipeout-building-label span {
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.75rem;
-  color: #29251f;
-  opacity: 0.9;
-}
-
-body[data-theme="wipeout"] .wipeout-arrow-down {
-  display: block;
-  width: 65px;
-  height: 30px;
-  color: #171512;
-  overflow: visible;
-}
-
-/* ========================================
-   WIPEOUT - HEADER E TITOLI
-======================================== */
-
-/* Titolo della facoltà */
-body[data-theme="wipeout"] .header h1 {
-  color: #171512 !important;
-  border: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-/* Rimuove la riga arancione dall'header */
-body[data-theme="wipeout"] .header {
-  border: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-/* Titolo "Edifici disponibili" */
-body[data-theme="wipeout"] .section-heading h2 {
-  color: #171512 !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-body[data-theme="wipeout"] .app-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  margin-top: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.6rem;
-  color: #171512;
-  opacity: 0.7;
-}
-
-body[data-theme="wipeout"] .app-footer-left,
-body[data-theme="wipeout"] .app-footer-right {
-  font-family: "Fusion", sans-serif !important;
-}
-
-body[data-theme="wipeout"],
-body[data-theme="wipeout"] #root,
-body[data-theme="wipeout"] .app-shell {
-  width: 100%;
-  max-width: none !important;
-  min-width: 0;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-body[data-theme="wipeout"] .app-shell > .app-footer {
-  margin-top: auto;
-  flex-shrink: 0;
-}
-
-body[data-theme="wipeout"] h2 {
-  color: #171512 !important;
-}
-
-/* ========================================
-   WIPEOUT - LISTA FACOLTÀ
-======================================== */
-
-body[data-theme="wipeout"] .home-menu {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-}
-
-body[data-theme="wipeout"] .faculty-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-top: 35px;
-}
-
-body[data-theme="wipeout"] .faculty-list-item {
-  display: block;
-  width: fit-content;
-  color: #171512;
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-body[data-theme="wipeout"] .faculty-list-item:hover {
-  color: #ffffff;
-}
-
-/* ========================================
-   WIPEOUT - HOME PAGE
-======================================== */
-
-/* Nasconde il sottotitolo principale */
-body[data-theme="wipeout"] .header p {
-  display: none;
-}
-
-/* Nasconde il titolo della sezione */
-body[data-theme="wipeout"] .home-menu h2 {
-  display: none;
-}
-
-/* Nasconde l'etichetta INTERFACCIA */
-body[data-theme="wipeout"] .theme-label {
-  display: none;
-}
-
-/* Aumenta il titolo principale */
-body[data-theme="wipeout"] .header h1 {
-  text-align: left;
-  width: fit-content;
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 5rem;
-}
-
-/* ========================================
-   WIPEOUT - SPAZIATURA HOME
-======================================== */
-
-body[data-theme="wipeout"] .home-menu {
-  margin-top: 200px;
-}
-
-body[data-theme="wipeout"] .header h1 {
-  margin-top: 75px;
-}
-
-/* Wipeout - container a tutta larghezza */
-body[data-theme="wipeout"] .container {
-  width: 100%;
-  max-width: none !important;
-  margin: 0 !important;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
-  box-sizing: border-box;
-}
-
-/* Titolo e lista: allineamento */
-body[data-theme="wipeout"] .home-header h1,
-body[data-theme="wipeout"] .faculty-list {
-  margin-left: 150px;
-}
-
-/* ========================================
-   WIPEOUT - PAGINA FACOLTÀ
-======================================== */
-
-/* Allineamento generale a 150px */
-body[data-theme="wipeout"] .faculty-page .header,
-body[data-theme="wipeout"] .faculty-page .section-heading{
-  margin-left: 150px;
-}
-
-body[data-theme="wipeout"] .faculty-page .wipeout-buildings {
-  display: grid;
-  grid-template-columns: repeat(4, 320px);
-  column-gap: 10px;
-  row-gap: 40px;
-  width: fit-content;
-  margin: 28px auto 0 !important;
-  justify-content: center;
-  align-items: start;
-}
-
-/* Freccia indietro */
-body[data-theme="wipeout"] .faculty-page .back-link {
-  display: inline-block;
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 2.5rem;
-  color: #171512;
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-body[data-theme="wipeout"] .faculty-page .back-link:hover {
-  color: #ffffff;
-  font-size: 4rem;
-}
-
-/* Titolo della facoltà */
-body[data-theme="wipeout"] .faculty-page .header h1 {
-  font-size: 5rem;
-  margin-bottom: 35px;
-}
-
-/* Titolo Edifici disponibili */
-body[data-theme="wipeout"] .faculty-page .section-heading h2 {
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 3rem;
-  color: #171512;
-}
-
-/* Edifici più vicini orizzontalmente */
-body[data-theme="wipeout"] .faculty-page .wipeout-buildings {
-  column-gap: 12px;
-}
-
-/* Adattamento schermi piccoli */
-@media (max-width: 700px) {
-  body[data-theme="wipeout"] .faculty-page .header,
-  body[data-theme="wipeout"] .faculty-page .section-heading,
-  body[data-theme="wipeout"] .faculty-page .wipeout-buildings {
-    margin-left: 20px;
-  }
-}
-
-/* ========================================
-   WIPEOUT - PAGINA EDIFICIO
-======================================== */
-
-body[data-theme="wipeout"] .building-page > button.back-link {
-  display: block;
-  width: fit-content;
-  margin: 0 0 35px 150px;
-  padding: 0;
-
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 2.5rem;
-  line-height: 1;
-  color: #171512;
-
-  background: transparent;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-}
-
-body[data-theme="wipeout"] .building-page > button.back-link:hover {
-  color: #ffffff;
-  font-size: 4rem;
-}
-
-body[data-theme="wipeout"] .building-page .wipeout-rooms {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 85%;
-}
-
-/* Adattamento schermi piccoli */
-@media (max-width: 700px) {
-  body[data-theme="wipeout"] .building-page > button.back-link {
-    margin-left: 20px;
-  }
-
-  body[data-theme="wipeout"] .building-page .wipeout-rooms {
-    width: 100%;
-  }
-}
-
-body[data-theme="wipeout"] button.back-link {
-  display: block;
-  width: fit-content;
-  padding: 0;
-  border: none;
-  background: transparent;
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 2.5rem;
-  line-height: 1;
-  color: #171512;
-  cursor: pointer;
-}
-
-body[data-theme="wipeout"] button.back-link:hover {
-  color: #ffffff;
-  font-size: 4rem;
-}   
-
-/* Griglia aule: disposizione indipendente per ogni elemento */
-body[data-theme="wipeout"] .building-page .wipeout-rooms {
-  align-items: start;
-  grid-auto-rows: max-content;
-}
-
-body[data-theme="wipeout"] .building-page .wipeout-room {
-  align-self: start;
-  height: fit-content;
-}
-
-/* ========================================
-   WIPEOUT - ORARIO LEZIONI
-======================================== */
-
-/* Contenitore generale senza riquadro */
-body[data-theme="wipeout"] .schedule-container {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding: 0 150px 150px !important;
-}
-
-/* Titolo */
-body[data-theme="wipeout"] .schedule-container h3 {
-  color: #171512 !important;
-  font-family: "F500 Angular", sans-serif !important;
-  margin-bottom: 25px;
-}
-
-/* Lista */
-body[data-theme="wipeout"] .schedule-container .lesson-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-/* Singola lezione: rettangolo indipendente */
-body[data-theme="wipeout"] .schedule-container .lesson {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  padding: 16px 20px;
-
-  background: transparent !important;
-  border: 1px solid #171512 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  box-sizing: border-box;
-  width: 50%;
-  padding: 16px 20px;
-}
-
-@media (max-width: 700px) {
-  body[data-theme="wipeout"] .schedule-container {
-    width: calc(100% - 40px);
-  }
-}
-
-/* Righe */
-body[data-theme="wipeout"] .schedule-container .lesson-row {
-  display: grid;
-  grid-template-columns: 100px minmax(0, 1fr);
-  align-items: baseline;
-  column-gap: 20px;
-}
-
-/* Orari, corsi e professori */
-body[data-theme="wipeout"] .schedule-container .lesson-time,
-body[data-theme="wipeout"] .schedule-container .lesson-course,
-body[data-theme="wipeout"] .schedule-container .lesson-professor {
-  font-family: "Fusion", sans-serif !important;
-  font-size: 0.85rem;
-  color: #171512 !important;
-  display: block;
-  min-width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-/* Nessuna lezione */
-body[data-theme="wipeout"] .schedule-container .no-events {
-  color: #171512 !important;
-  background: transparent !important;
-  border: none !important;
-}
-
-/* Aula non disponibile */
-body[data-theme="wipeout"] .schedule-container .unavailable {
-  font-family: "Fusion", sans-serif !important;
-  color: #171512 !important;
-}
-
-@media (max-width: 600px) {
-  body[data-theme="wipeout"] .schedule-container .lesson-row {
-    grid-template-columns: 75px minmax(0, 1fr);
-    column-gap: 12px;
-  }
-}
-
-/* ========================================
-   WIPEOUT - INTESTAZIONE AULA
-======================================== */
-
-body[data-theme="wipeout"] .room-header {
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-body[data-theme="wipeout"] .room-header .back-link {
-  margin-bottom: 35px;
-}
-
-body[data-theme="wipeout"] .room-header h1 {
-  color: #171512 !important;
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 5rem;
-  margin-top: 80px;
-  text-transform: uppercase;
-}
-
-body[data-theme="wipeout"] .room-header p {
-  color: #171512 !important;
-  font-family: "F500 Angular", sans-serif !important;
-  margin-top: 50px !important;
-  margin-bottom: 60px !important;
-  font-size: 2rem;
-}
-
-@media (max-width: 700px) {
-  body[data-theme="wipeout"] .room-header {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-/* Allineamento intestazione aula a sinistra */
-body[data-theme="wipeout"] .room-header {
-  margin-left: 150px !important;
-  margin-right: 150px !important;
-  align-items: flex-start !important;
-  text-align: left !important;
-}
-
-body[data-theme="wipeout"] .room-header h1,
-body[data-theme="wipeout"] .room-header p {
-  width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  text-align: left !important;
-}
-
-/* ========================================
-   WIPEOUT - SELETTORE DATA
-======================================== */
-
-body[data-theme="wipeout"] .date-selector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  margin: 30px 0 45px;
-}
-
-body[data-theme="wipeout"] .date-selector input[type="date"] {
-  width: 170px;
-  padding: 0;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-
-  color: #171512 !important;
-  font-family: "Fusion", sans-serif !important;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  color-scheme: light;
-}
-
-body[data-theme="wipeout"] .date-selector .date-arrow {
-  padding: 0;
-  border: none;
-  background: transparent;
-  color: #171512;
-
-  font-family: "F500 Angular", sans-serif !important;
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-
-body[data-theme="wipeout"] .date-selector .date-arrow:hover {
-  color: #ffffff;
-  transform: scale(1.25);
-}
-
-/* ==========================================
-   PROFESSOR PAGE
-   ========================================== */
-
-body[data-theme="wipeout"] .professor-search {
-  position: relative;
-  width: 50%;
-  padding: 45px;
-}
-
-body[data-theme="wipeout"] .professor-search h2 {
-  font-family: "F500 Angular", sans-serif;
-  margin-bottom: 25px;
-}
-
-body[data-theme="wipeout"] .professor-search > input {
-  width: 100%;
-  padding: 18px 22px;
-  font-family: "Fusion", sans-serif;
-  font-size: 1.1rem;
-  background: transparent;
-  color: #171512;
-  border: 1px solid #171512;
-  outline: none;
-}
-
-body[data-theme="wipeout"] .professor-search > input:focus {
-  border-color: #a96755;
-}
-
-body[data-theme="wipeout"] .professor-results {
-  position: absolute;
-  z-index: 10;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  max-height: 350px;
-  overflow-y: auto;
-  background: #6b6358;
-  border: 1px solid #171512;
-}
-
-body[data-theme="wipeout"] .professor-result {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  padding: 15px 20px;
-  background: transparent;
-  color: #171512;
-  border: none;
-  border-bottom: 1px solid rgba(23, 21, 18, 0.25);
-  text-align: left;
-  cursor: pointer;
-  font-family: "Fusion", sans-serif;
-}
-
-body[data-theme="wipeout"] .professor-result:hover {
-  background: #a96755;
-}
-
-body[data-theme="wipeout"] .professor-matricola {
-  opacity: 0.65;
-  font-size: 0.85rem;
-}
-
-body[data-theme="wipeout"] .professor-selected {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-  font-family: "Fusion", sans-serif;
-}
-
-body[data-theme="wipeout"] .professor-selected > span {
-  font-size: 0.75rem;
-  opacity: 0.7;
-}
-
-body[data-theme="wipeout"] .professor-selected > strong {
-  font-size: 1.1rem;
-}
-
-body[data-theme="wipeout"] .professor-selected > button {
-  padding: 8px 12px;
-  background: transparent;
-  border: 1px solid #171512;
-  color: #171512;
-  cursor: pointer;
-  font-family: "Fusion", sans-serif;
-}
-
-body[data-theme="wipeout"] .professor-schedule {
-  padding-top: 0 !important;
-}
-
-body[data-theme="wipeout"] .professor-lesson-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-body[data-theme="wipeout"] .professor-lesson {
-  width: 50%;
-  padding: 20px;
-  border: 1px solid #171512;
-}
-
-body[data-theme="wipeout"] .professor-lesson-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 18px;
-}
-
-body[data-theme="wipeout"] .professor-lesson-time {
-  font-family: "F500 Angular", sans-serif;
-  font-size: 1.5rem;
-}
-
-body[data-theme="wipeout"] .professor-lesson-type {
-  font-family: "Fusion", sans-serif;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-body[data-theme="wipeout"] .professor-lesson-details {
-  font-family: "Fusion", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-
-body[data-theme="wipeout"] .professor-lesson-details p {
-  margin: 5px 0;
-}
-
-body[data-theme="wipeout"] .professor-lesson-meta {
-  margin-top: 15px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(23, 21, 18, 0.3);
-  font-family: "Fusion", sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-body[data-theme="wipeout"] .professor-lesson-meta p {
-  margin: 4px 0;
-}
-
-body[data-theme="wipeout"] .professor-message {
-  font-family: "Fusion", sans-serif;
-  margin-top: 20px;
-}
-
-@media (max-width: 700px) {
-  body[data-theme="wipeout"] .professor-search {
-    width: auto;
-    margin-top: 100px;
-  }
-
-  body[data-theme="wipeout"] .professor-lesson {
-    width: 100%;
-    margin-top: 100px;
-  }
-
-  body[data-theme="wipeout"] .professor-lesson-header {
-    align-items: flex-start;
+  /* ---------- Variabili ---------- */
+  --bg: #6b6358;
+  --ink: #171512;
+  --ink-soft: #29251f;
+  --sand: #c4ad75;
+  --terra: #a96755;
+  --white: #ffffff;
+  --font-main: "F500 Angular", sans-serif;
+  --font-alt: "Fusion", sans-serif;
+
+  background-color: var(--bg);
+
+  /* ---------- Layout generale ---------- */
+  &,
+  #root,
+  .app-shell {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
 
-body[data-theme="wipeout"] .professor-selected,
-body[data-theme="wipeout"] .professor-selected span,
-body[data-theme="wipeout"] .professor-selected strong {
-  color: #171512 !important;
-  font-family: "Fusion", sans-serif !important;
-}
+  #root {
+    background: var(--bg);
+  }
 
-body[data-theme="wipeout"] .professor-page,
-body[data-theme="wipeout"] .professor-page p,
-body[data-theme="wipeout"] .professor-page span,
-body[data-theme="wipeout"] .professor-page strong,
-body[data-theme="wipeout"] .professor-page button,
-body[data-theme="wipeout"] .professor-page input,
-body[data-theme="wipeout"] .professor-page label {
-  color: #171512;
-  font-family: "Fusion", sans-serif;
-}
+  .container {
+    width: 100%;
+    padding-inline: 40px;
+    box-sizing: border-box;
+  }
 
-body[data-theme="wipeout"] .professor-page h1,
-body[data-theme="wipeout"] .professor-page h2 {
-  color: #171512;
-}
+  /* ---------- Font ----------
+     F500 Angular ovunque (compresi button e input, che non
+     ereditano); Fusion solo sugli elementi elencati sotto. */
+  &,
+  & * {
+    font-family: var(--font-main);
+  }
 
-body[data-theme="wipeout"] .professor-search > input,
-body[data-theme="wipeout"] .professor-search > input::placeholder {
-  font-family: "Fusion", sans-serif !important;
-  color: #171512;
-}
+  .system-status,
+  .app-footer,
+  .app-footer span,
+  .wipeout-building-label,
+  .wipeout-building-label *,
+  .wipeout-room-label span,
+  .schedule-container :is(.lesson-time, .lesson-course, .lesson-professor, .unavailable),
+  .date-selector input[type="date"],
+  .professor-search input,
+  .professor-page .lesson,
+  .professor-page .lesson * {
+    font-family: var(--font-alt);
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson,
-body[data-theme="wipeout"] .professor-page .lesson * {
-  font-family: "Fusion", sans-serif !important;
-  color: #171512;
-}
+  /* ---------- Barra di stato ---------- */
+  .theme-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 12px 40px;
+    box-sizing: border-box;
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson {
-  width: 70% !important;
-}
+  .system-status {
+    font-size: 0.7rem;
+    color: var(--ink);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-time {
-  white-space: nowrap;
-  min-width: max-content;
-  flex-shrink: 0;
-}
+  /* ---------- Footer ---------- */
+  .app-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: auto;
+    padding-inline: 40px;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    color: var(--ink);
+    opacity: 0.7;
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-row {
-  display: flex;
-  align-items: left;
-  gap: 20px;
-}
+  /* ---------- Titoli ---------- */
+  .header {
+    & h1 {
+      width: fit-content;
+      margin-top: 75px;
+      color: var(--ink);
+      font-size: 5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-body[data-theme="wipeout"] .professor-page .lesson-course {
-  min-width: 0;
-}
+    & p {
+      display: none;
+    }
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-row {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  align-items: left;
-  gap: 20px;
-}
+  & h2 {
+    color: var(--ink);
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-time {
-  white-space: nowrap;
-  min-width: 0;
-}
+  /* ---------- Freccia indietro ---------- */
+  & button.back-link {
+    display: block;
+    width: fit-content;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--ink);
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
 
-body[data-theme="wipeout"] .professor-page .lesson-course,
-body[data-theme="wipeout"] .professor-page .lesson-professor {
-  min-width: 0;
-  text-align: left;
-}
+    &:hover {
+      color: var(--white);
+      font-size: 4rem;
+    }
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-time,
-body[data-theme="wipeout"] .professor-page .lesson-course,
-body[data-theme="wipeout"] .professor-page .lesson-professor {
-  text-align: left !important;
-  justify-self: start;
-}
+  /* ---------- Pannelli e messaggi ---------- */
+  .panel {
+    background: var(--bg);
+    border: 1px solid var(--bg);
+  }
 
-body[data-theme="wipeout"] .professor-page .lesson-row {
-  justify-items: start;
-}
+  .empty {
+    color: #82929b;
+  }
 
-/* BARRA RICERCA PROFESSORE SELEZIONATO */
+  /* ==========================================
+     HOME
+     ========================================== */
 
-body[data-theme="wipeout"] .professor-search input {
-  font-family: "Fusion", sans-serif !important;
-  color: #171512;
-}
+  .home-header h1 {
+    margin-left: 150px;
+  }
 
-body[data-theme="wipeout"] .professor-search input:focus {
-  outline: none;
-}
+  .home-menu {
+    margin-top: 200px;
 
-body[data-theme="wipeout"] .professor-search input:read-only {
-  background: #ffffff !important;
-  color: #171512 !important;
-  caret-color: transparent;
-}
+    & h2 {
+      display: none;
+    }
+  }
 
-body[data-theme="wipeout"] .professor-search input:focus,
-body[data-theme="wipeout"] .professor-search input:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: #171512 !important;
+  .faculty-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 35px;
+    margin-left: 150px;
+  }
+
+  .faculty-list-item {
+    display: block;
+    width: fit-content;
+    color: var(--ink);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  /* ==========================================
+     PAGINA FACOLTÀ
+     ========================================== */
+
+  .faculty-page {
+    .header,
+    .section-heading {
+      text-align: left;
+    }
+
+    .header {
+      margin-left: 150px;
+
+      @media (max-width: 700px) {
+        margin-left: 20px;
+      }
+    }
+
+    /* Un po' più a destra rispetto a freccia e titolo */
+    .section-heading {
+      margin-left: 190px;
+
+      @media (max-width: 700px) {
+        margin-left: 40px;
+      }
+    }
+
+    .header h1 {
+      margin-bottom: 35px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .section-heading h2 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .wipeout-buildings {
+      display: grid;
+      grid-template-columns: repeat(4, 320px);
+      column-gap: 12px;
+      row-gap: 40px;
+      width: fit-content;
+      margin: 28px auto 0;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  /* ---------- Card edificio ---------- */
+  .wipeout-building {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--ink);
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Righe alternate: sabbia (1-4) / terra (5-8) */
+    &:is(:nth-child(8n + 5), :nth-child(8n + 6), :nth-child(8n + 7), :nth-child(8n + 8))
+      .wipeout-building-symbol {
+      background: var(--terra);
+    }
+  }
+
+  .wipeout-building-symbol {
+    display: flex;
+    align-items: center;
+    flex: 0 0 70px;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    background: var(--sand);
+    color: var(--ink);
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .wipeout-arrow-down {
+    display: block;
+    width: 65px;
+    height: 30px;
+    color: var(--ink);
+    overflow: visible;
+  }
+
+  .wipeout-building-label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--ink);
+    text-transform: uppercase;
+    line-height: 1.3;
+
+    & strong {
+      font-size: 0.95rem;
+      font-weight: normal;
+    }
+
+    & span {
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+  }
+
+  /* ==========================================
+     PAGINA EDIFICIO
+     ========================================== */
+
+  .building-page {
+    > button.back-link {
+      margin: 0 0 35px 150px;
+
+      @media (max-width: 700px) {
+        margin-left: 20px;
+      }
+    }
+
+    .wipeout-rooms {
+      width: 85%;
+      margin: 0 auto;
+      align-items: start;
+      grid-auto-rows: max-content;
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+    }
+  }
+
+  /* ---------- Griglia e card aula ---------- */
+  .wipeout-rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 28px 24px;
+    margin-top: 28px;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px 16px;
+    }
+  }
+
+  .wipeout-room {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  .wipeout-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+
+    & span {
+      display: block;
+      width: 100%;
+      height: 19px;
+      clip-path: polygon(0 0, 94% 0, 100% 25%, 100% 100%, 0 100%);
+
+      @media (max-width: 600px) {
+        height: 15px;
+      }
+    }
+  }
+
+  .wipeout-room-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    color: var(--ink);
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.3;
+
+    & strong {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    & span {
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      font-weight: normal;
+      line-height: 1.4;
+      opacity: 0.9;
+    }
+  }
+
+  /* ==========================================
+     PAGINA AULA
+     ========================================== */
+
+  .room-header {
+    margin-inline: 150px;
+    text-align: left;
+
+    .back-link {
+      margin-bottom: 35px;
+    }
+
+    & h1,
+    & p {
+      color: var(--ink);
+    }
+
+    & h1 {
+      margin-top: 80px;
+      font-size: 5rem;
+      text-transform: uppercase;
+    }
+
+    & p {
+      margin-block: 50px 60px;
+      font-size: 2rem;
+      margin-left: 40px;
+    }
+  }
+
+  /* ---------- Selettore data ---------- */
+  .date-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0 45px;
+
+    & input[type="date"] {
+      width: 170px;
+      padding: 0;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--ink);
+      font-size: 1rem;
+      text-align: center;
+      cursor: pointer;
+      color-scheme: light;
+    }
+
+    .date-arrow {
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--ink);
+      font-size: 2rem;
+      line-height: 1;
+      cursor: pointer;
+      transition: color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        color: var(--white);
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  /* ---------- Orario lezioni (aula e professore) ---------- */
+  .schedule-container {
+    padding: 0 150px 150px;
+
+    @media (max-width: 700px) {
+      width: calc(100% - 40px);
+    }
+
+    .lesson-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .lesson {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 50%;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      border: 1px solid var(--ink);
+    }
+
+    .lesson-row {
+      display: grid;
+      grid-template-columns: 100px minmax(0, 1fr);
+      align-items: baseline;
+      column-gap: 20px;
+
+      @media (max-width: 600px) {
+        grid-template-columns: 75px minmax(0, 1fr);
+        column-gap: 12px;
+      }
+    }
+
+    .lesson-time,
+    .lesson-course,
+    .lesson-professor {
+      display: block;
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 0.85rem;
+      color: var(--ink);
+    }
+
+    .unavailable,
+    .no-events {
+      color: var(--ink);
+    }
+  }
+
+  /* ==========================================
+     PAGINA PROFESSORE
+     ========================================== */
+
+  .professor-page {
+    & :is(p, span, button, input) {
+      color: var(--ink);
+    }
+
+    /* Lezioni più larghe, colonna orario più ampia */
+    .lesson {
+      width: 70%;
+    }
+
+    .lesson-row {
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 20px;
+      justify-items: start;
+    }
+  }
+
+  .professor-schedule {
+    padding-top: 0;
+  }
+
+  .professor-search {
+    position: relative;
+    width: 50%;
+    padding: 45px;
+
+    @media (max-width: 700px) {
+      width: auto;
+      margin-top: 100px;
+    }
+
+    > input {
+      width: 100%;
+      padding: 18px 22px;
+      background: transparent;
+      border: 1px solid var(--ink);
+      border-radius: 2px;
+      font-size: 1.1rem;
+      outline: none;
+    }
+
+    /* Docente già selezionato */
+    & input:read-only {
+      background: var(--white);
+      caret-color: transparent;
+    }
+  }
+
+  .professor-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    max-height: 350px;
+    overflow-y: auto;
+    background: var(--bg);
+    border: 1px solid var(--ink);
+  }
+
+  .professor-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 15px 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(23, 21, 18, 0.25);
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--terra);
+    }
+  }
+
+  .professor-matricola {
+    font-size: 0.85rem;
+    opacity: 0.65;
+  }
+
+  .professor-message {
+    margin-top: 20px;
+  }
 }
