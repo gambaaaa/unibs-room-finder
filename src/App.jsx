@@ -829,11 +829,11 @@ function App() {
     <div className="app-shell">
       <nav className="theme-bar">
         <span className="system-status">
-          SYS.DATE // {dataSistema}
+          SYS.DATE — {dataSistema}
           {"  |  "}
-          LOCAL.TIME // {oraSistema}
+          LOCAL.TIME — {oraSistema}
           {"  |  "}
-          TZ // {fusoOrario}
+          TZ — {fusoOrario}
         </span>
       </nav>
 
@@ -847,7 +847,7 @@ function App() {
 
       <footer className="app-footer">
         <span className="app-footer-left">WIPEOUT THEME 1.0.2</span>
-        <span className="app-footer-right">GAMBA XI/26</span>
+        <span className="app-footer-right">GAMBA XI | 26</span>
       </footer>
     </div>
   );
