@@ -174,14 +174,14 @@ body[data-theme="wipeout"] {
     border: none;
     background: transparent;
     color: var(--ink);
-    font-size: 2.5rem;
+    font-size: 4rem;
     line-height: 1;
     cursor: pointer;
+    transition: color 0.2s ease;
 
     @media (hover: hover) {
       &:hover {
         color: var(--white);
-        font-size: 4rem;
       }
     }
   }
@@ -493,6 +493,7 @@ body[data-theme="wipeout"] {
     & p {
       margin-block: clamp(24px, 4vw, 50px) clamp(30px, 5vw, 60px);
       font-size: clamp(1.2rem, 5vw, 2rem);
+      margin-left: 40px;
     }
   }
 
