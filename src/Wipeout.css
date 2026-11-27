@@ -605,6 +605,7 @@ body[data-theme="wipeout"] {
       font-size: clamp(2rem, min(9vw, 14vh), 5rem);
       line-height: 1.3;
       text-transform: uppercase;
+      letter-spacing: 3px;
     }
 
     /* Codice e capienza: 40px più a destra del nome */
