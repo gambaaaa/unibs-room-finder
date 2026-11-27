@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
-import { Routes, Route, Link, useParams, useNavigate } from "react-router-dom";
+import { Routes, Route, Link, useParams } from "react-router-dom";
 import RoomPage from "./RoomPage";
 import edifici from "./data/edifici";
 import docenti from "./data/docenti/docenti.json";
+import { useIndietro } from "./useIndietro";
 import "./App.css";
 import "./Wipeout.css";
 
@@ -111,7 +112,7 @@ function HomePage() {
 
 // PAGINA FACOLTÀ: ELENCO EDIFICI
 function FacultyPage() {
-  const navigate = useNavigate();
+  const indietro = useIndietro("/");
   const { facultyId } = useParams();
 
   const selezionata = facolta.find(
@@ -141,7 +142,7 @@ function FacultyPage() {
         <button
           type="button"
           className="back-link"
-          onClick={() => navigate(-1)}
+          onClick={indietro}
         >
           ←
       </button>
@@ -251,11 +252,19 @@ function BuildingPage() {
 
   const coloriPerAula = generaColoriAule(numeroTotaleAule);
 
-  const navigate = useNavigate();
   const { buildingId } = useParams();
 
   const edificio = edifici.find(
     (item) => item.id === buildingId
+  );
+
+  // Freccia indietro: se la pagina è aperta da link diretto, va alla facoltà
+  const facoltaEdificio = facolta.find((item) =>
+    appartieneAllaFacolta(edificio?.codice, item.id)
+  );
+
+  const indietro = useIndietro(
+    facoltaEdificio ? `/facolta/${facoltaEdificio.id}` : "/"
   );
 
   const auleOrdinate = useMemo(() => {
@@ -397,7 +406,7 @@ function BuildingPage() {
       <button
           type="button"
           className="back-link"
-          onClick={() => navigate(-1)}
+          onClick={indietro}
         >
           ←
       </button>
@@ -445,7 +454,7 @@ function BuildingPage() {
                   <>
                     <span className="wipeout-room-status">
                       {occupata ? "Occupata" : "Libera"} {stato?.orario
-                        ? `- ${formatOra(stato.orario)}`
+                        ? `: ${formatOra(stato.orario)}`
                         : ""}
                     </span>
                   </>
@@ -498,7 +507,7 @@ function dataLocale(date) {
 }
 
 function ProfessorPage() {
-  const navigate = useNavigate();
+  const indietro = useIndietro("/");
 
   const [ricerca, setRicerca] = useState("");
   const [docenteSelezionato, setDocenteSelezionato] = useState(null);
@@ -613,7 +622,7 @@ function ProfessorPage() {
         <button
           type="button"
           className="back-link"
-          onClick={() => navigate(-1)}
+          onClick={indietro}
         >
           ←
         </button>
@@ -846,7 +855,7 @@ function App() {
       </Routes>
 
       <footer className="app-footer">
-        <span className="app-footer-left">WIPEOUT THEME 1.0.2</span>
+        <span className="app-footer-left">WIPEOUT THEME 1.0.3</span>
         <span className="app-footer-right">GAMBA XI | 26</span>
       </footer>
     </div>

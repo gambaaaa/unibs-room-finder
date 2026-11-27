@@ -1,7 +1,8 @@
 
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import edifici from "./data/edifici";
+import { useIndietro } from "./useIndietro";
 
 const API_URL =
   "https://unibs-public.prod.up.cineca.it/api/Impegni/getImpegniPublic";
@@ -84,7 +85,6 @@ function getDocenti(impegno) {
 }
 
 function RoomPage() {
-  const navigate = useNavigate();
   const { roomId } = useParams();
 
   const [data, setData] = useState(dataLocale(new Date()));
@@ -111,6 +111,11 @@ function RoomPage() {
       break;
     }
   }
+
+  // Freccia indietro: se la pagina è aperta da link diretto, va all'edificio
+  const indietro = useIndietro(
+    edificio ? `/edificio/${edificio.id}` : "/"
+  );
 
   useEffect(() => {
     if (!edificio) return;
@@ -187,7 +192,7 @@ function RoomPage() {
         <button
             type="button"
             className="back-link"
-            onClick={() => navigate(-1)}
+            onClick={indietro}
         >
             ←
         </button>
