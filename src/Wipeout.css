@@ -648,6 +648,10 @@ body[data-theme="wipeout"] {
       align-items: baseline;
       column-gap: 20px;
 
+      & > :only-child {
+        grid-column: 1 / -1;
+      }
+
       @media (max-width: 600px) {
         grid-template-columns: 75px minmax(0, 1fr);
         column-gap: 12px;
@@ -664,15 +668,6 @@ body[data-theme="wipeout"] {
       text-overflow: ellipsis;
       font-size: 0.85rem;
       color: var(--ink) !important;
-    }
-
-    /* Su mobile corsi e docenti vanno a capo invece di essere troncati */
-    .lesson-course,
-    .lesson-professor {
-      @media (max-width: 700px) {
-        white-space: normal;
-        overflow-wrap: anywhere;
-      }
     }
 
     .unavailable {
@@ -707,7 +702,6 @@ body[data-theme="wipeout"] {
     .lesson-row {
       grid-template-columns: 180px minmax(0, 1fr);
       gap: 20px;
-      justify-items: start;
 
       @media (max-width: 600px) {
         grid-template-columns: 110px minmax(0, 1fr);
@@ -757,7 +751,7 @@ body[data-theme="wipeout"] {
 
     /* Docente già selezionato */
     & input:read-only {
-      background: var(--white) !important;
+      background: transparent !important;
       color: var(--ink) !important;
       caret-color: transparent;
     }
