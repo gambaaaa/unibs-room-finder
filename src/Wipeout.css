@@ -405,13 +405,13 @@ body[data-theme="wipeout"] {
     overflow-wrap: anywhere;
 
     & strong {
-      font-size: 0.95rem;
+      font-size: 1.15rem;
       font-weight: normal;
     }
 
     & span {
       color: var(--ink-soft);
-      font-size: 0.75rem;
+      font-size: 0.90rem;
       opacity: 0.9;
     }
   }
@@ -523,13 +523,13 @@ body[data-theme="wipeout"] {
     overflow-wrap: anywhere;
 
     & strong {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: normal;
     }
 
     & span {
       color: var(--ink-soft);
-      font-size: 0.75rem;
+      font-size: 0.95rem;
       font-weight: normal;
       line-height: 1.4;
       opacity: 0.9;
@@ -695,7 +695,7 @@ body[data-theme="wipeout"] {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      font-size: 0.85rem;
+      font-size: 1.05rem;
       color: var(--ink) !important;
     }
 
