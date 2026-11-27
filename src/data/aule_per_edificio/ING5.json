@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec72",
+        "codice": "ING5",
+        "descrizione": "Via Triumplina, 66"
+    },
+    "aule": [
+        {
+            "capienza": 35,
+            "id": "65d5a906a1f6b400e1f1a333",
+            "codice": "ING056",
+            "descrizione": "aula 3 Ca' Nöa",
+            "capienzaEffettiva": 35
+        },
+        {
+            "capienza": 155,
+            "id": "65d5a905a1f6b400e1f1a32d",
+            "codice": "ING054",
+            "descrizione": "aula 1 Ca' Nöa",
+            "capienzaEffettiva": 155
+        },
+        {
+            "capienza": 26,
+            "id": "65d5a905a1f6b400e1f1a330",
+            "codice": "ING055",
+            "descrizione": "aula 2 Ca' Nöa",
+            "capienzaEffettiva": 26
+        }
+    ]
+}

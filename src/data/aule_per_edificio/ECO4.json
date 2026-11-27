@@ -1,0 +1,86 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec60",
+        "codice": "ECO4",
+        "descrizione": "Sede Mantova"
+    },
+    "aule": [
+        {
+            "capienza": 54,
+            "id": "65d5a8a595ff13011395ede8",
+            "codice": "ECO050",
+            "descrizione": "Aula Virgilio - MN",
+            "capienzaEffettiva": 54
+        },
+        {
+            "capienza": 76,
+            "id": "65d5a906a1f6b400e1f1a354",
+            "codice": "ECO046",
+            "descrizione": "Aula 2 - MN",
+            "capienzaEffettiva": 38
+        },
+        {
+            "capienza": 29,
+            "id": "65d5a906a1f6b400e1f1a342",
+            "codice": "ECO051",
+            "descrizione": "LAB INF. 2 - MN",
+            "capienzaEffettiva": 29
+        },
+        {
+            "capienza": 54,
+            "id": "65d5a906a1f6b400e1f1a357",
+            "codice": "ECO047",
+            "descrizione": "Aula CLAM - MN",
+            "capienzaEffettiva": 27
+        },
+        {
+            "capienza": 64,
+            "id": "65d5a906a1f6b400e1f1a351",
+            "codice": "ECO045",
+            "descrizione": "Aula 1 - MN",
+            "capienzaEffettiva": 32
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a906a1f6b400e1f1a35a",
+            "codice": "ECO049",
+            "descrizione": "LAB. INF. 1 - MN",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 45,
+            "id": "65d5a906a1f6b400e1f1a35d",
+            "codice": "ECO048",
+            "descrizione": "Aula 6 - MN",
+            "capienzaEffettiva": 45
+        },
+        {
+            "capienza": 16,
+            "id": "66f69ddf7870eb001a254a5f",
+            "codice": "ECO052",
+            "descrizione": "Aula 3 - MN",
+            "capienzaEffettiva": 16
+        },
+        {
+            "capienza": 20,
+            "id": "67ab0ca263fdea001e21cdbe",
+            "codice": "ECO053",
+            "descrizione": "LAB. INF. 3 - MN",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 20,
+            "id": "69a5b516f5ef19004c1b5675",
+            "codice": "ECO054",
+            "descrizione": "Aula 5 - MN",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 150,
+            "id": "69b40d0c6184660037f37fd3",
+            "codice": "ECO055",
+            "descrizione": "Salone Mantegnesco - MN",
+            "capienzaEffettiva": 150
+        }
+    ]
+}

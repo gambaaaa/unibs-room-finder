@@ -1,0 +1,23 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec5a",
+        "codice": "CEDISU02",
+        "descrizione": "Via Valotti 3"
+    },
+    "aule": [
+        {
+            "capienza": 100,
+            "id": "65d5a906a1f6b400e1f1a34e",
+            "codice": "LUCCHINI",
+            "descrizione": "Auditorium collegio Lucchini",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 140,
+            "id": "65d5aa19fb97c700a57f241b",
+            "codice": "ING058",
+            "descrizione": "sala Polifunzionale",
+            "capienzaEffettiva": 140
+        }
+    ]
+}

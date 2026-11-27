@@ -1,0 +1,23 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec66",
+        "codice": "SPEDCIV01",
+        "descrizione": "Spedali Civili"
+    },
+    "aule": [
+        {
+            "capienza": 120,
+            "id": "65d5a906a1f6b400e1f1a33f",
+            "codice": "CIV01",
+            "descrizione": "Aula Magna Spedali Civili",
+            "capienzaEffettiva": 120
+        },
+        {
+            "capienza": 40,
+            "id": "696f5fee26c75d0041ffaf18",
+            "codice": "CIV02",
+            "descrizione": "Laboratorio RITMO",
+            "capienzaEffettiva": 40
+        }
+    ]
+}

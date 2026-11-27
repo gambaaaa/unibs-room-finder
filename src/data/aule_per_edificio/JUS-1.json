@@ -1,0 +1,51 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec51",
+        "codice": "JUS-1",
+        "descrizione": "Corso Mameli, 27"
+    },
+    "aule": [
+        {
+            "capienza": 125,
+            "id": "65d5a8a095ff13011395ecf7",
+            "codice": "JUS010",
+            "descrizione": "Aula 10",
+            "capienzaEffettiva": 125
+        },
+        {
+            "capienza": 56,
+            "id": "65d5a8a095ff13011395ecfa",
+            "codice": "JUS011",
+            "descrizione": "Aula 11",
+            "capienzaEffettiva": 56
+        },
+        {
+            "capienza": 45,
+            "id": "65d5a8a195ff13011395ed03",
+            "codice": "JUS009",
+            "descrizione": "Aula 9",
+            "capienzaEffettiva": 45
+        },
+        {
+            "capienza": 56,
+            "id": "65d5a8a195ff13011395ed00",
+            "codice": "JUS008",
+            "descrizione": "Aula 8",
+            "capienzaEffettiva": 56
+        },
+        {
+            "capienza": 24,
+            "id": "65d5a8a195ff13011395ed06",
+            "codice": "JUSAI",
+            "descrizione": "Aula Informatica",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 81,
+            "id": "65d5a8a095ff13011395ecfd",
+            "codice": "JUS007",
+            "descrizione": "Aula 7",
+            "capienzaEffettiva": 81
+        }
+    ]
+}

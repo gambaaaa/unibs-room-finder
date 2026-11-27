@@ -1,0 +1,16 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec5d",
+        "codice": "CEDISU03",
+        "descrizione": "Via Valotti 3B"
+    },
+    "aule": [
+        {
+            "capienza": 30,
+            "id": "65d5a906a1f6b400e1f1a336",
+            "codice": "ING059",
+            "descrizione": "Didattica valotti 3B",
+            "capienzaEffettiva": 30
+        }
+    ]
+}

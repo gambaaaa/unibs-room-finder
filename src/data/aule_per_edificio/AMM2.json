@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec42",
+        "codice": "AMM2",
+        "descrizione": "Via Gramsci 17"
+    },
+    "aule": [
+        {
+            "capienza": 10,
+            "id": "65d5a8a495ff13011395edd9",
+            "codice": "SALA_RIUN_GRAM",
+            "descrizione": "Sala Riunioni I Piano (Palazzo Bettoni)",
+            "capienzaEffettiva": 10
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a8a095ff13011395ecc9",
+            "codice": "83",
+            "descrizione": "Sala Consiliare (Palazzo Bettoni)",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 12,
+            "id": "65d5a8a095ff13011395eccc",
+            "codice": "84",
+            "descrizione": "sala Corsi (Palazzo Bettoni)",
+            "capienzaEffettiva": 12
+        }
+    ]
+}

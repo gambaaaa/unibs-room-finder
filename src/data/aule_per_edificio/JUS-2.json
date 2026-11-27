@@ -1,0 +1,142 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec54",
+        "codice": "JUS-2",
+        "descrizione": "Via San Faustino,41"
+    },
+    "aule": [
+        {
+            "capienza": 300,
+            "id": "65d5a8a195ff13011395ed1b",
+            "codice": "JUSAM",
+            "descrizione": "Aula Magna",
+            "capienzaEffettiva": 300
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a8a195ff13011395ed27",
+            "codice": "JUSPUTTI",
+            "descrizione": "Sala dei Putti",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 12,
+            "id": "65d5a8a195ff13011395ed2a",
+            "codice": "JUSCONSU",
+            "descrizione": "Sala Consultazione 1",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 48,
+            "id": "65d5a8a295ff13011395ed36",
+            "codice": "JUSTIACQUA",
+            "descrizione": "Sala Studio Acquario",
+            "capienzaEffettiva": 48
+        },
+        {
+            "capienza": 16,
+            "id": "65d5a8a195ff13011395ed1e",
+            "codice": "JUSLI",
+            "descrizione": "Lab. Informatico",
+            "capienzaEffettiva": 16
+        },
+        {
+            "capienza": 300,
+            "id": "65d5a8a195ff13011395ed12",
+            "codice": "JUS004",
+            "descrizione": "Aula 4",
+            "capienzaEffettiva": 300
+        },
+        {
+            "capienza": 54,
+            "id": "65d5a8a195ff13011395ed33",
+            "codice": "JUSTUTERRA",
+            "descrizione": "Sala Studio p.terra",
+            "capienzaEffettiva": 54
+        },
+        {
+            "capienza": 50,
+            "id": "65d5a8a095ff13011395ecf4",
+            "codice": "GALLERIA",
+            "descrizione": "Galleria delle Sfingi",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 110,
+            "id": "65d5a8a195ff13011395ed09",
+            "codice": "JUS001",
+            "descrizione": "Aula 1",
+            "capienzaEffettiva": 110
+        },
+        {
+            "capienza": 90,
+            "id": "65d5a8a195ff13011395ed0c",
+            "codice": "JUS002",
+            "descrizione": "Aula 2",
+            "capienzaEffettiva": 90
+        },
+        {
+            "capienza": 65,
+            "id": "65d5a8a195ff13011395ed0f",
+            "codice": "JUS003",
+            "descrizione": "Aula 3",
+            "capienzaEffettiva": 65
+        },
+        {
+            "capienza": 120,
+            "id": "65d5a8a195ff13011395ed15",
+            "codice": "JUS005",
+            "descrizione": "Aula 5",
+            "capienzaEffettiva": 120
+        },
+        {
+            "capienza": 6,
+            "id": "65d5a8a195ff13011395ed2d",
+            "codice": "JUSBIBLIO",
+            "descrizione": "Sala EX-Biblioteca storica",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 60,
+            "id": "65d5a8a195ff13011395ed18",
+            "codice": "JUS006",
+            "descrizione": "Aula 6",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a8a195ff13011395ed21",
+            "codice": "JUSCANDE",
+            "descrizione": "Sala delle Candelabre",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 12,
+            "id": "65d5a8a195ff13011395ed24",
+            "codice": "JUSGRIFO",
+            "descrizione": "Sala dei Grifoni",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a195ff13011395ed30",
+            "codice": "JUSCORTILE",
+            "descrizione": "Cortile",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 56,
+            "id": "6704ff45f8c49d001abff0b4",
+            "codice": "JUSTUPRIMO",
+            "descrizione": "Sala Studio primo p.",
+            "capienzaEffettiva": 56
+        },
+        {
+            "capienza": 10,
+            "id": "69e2219fb355ff005f2a6f31",
+            "codice": "JUSPROSPETTIVE",
+            "descrizione": "Sala Prospettive",
+            "capienzaEffettiva": 10
+        }
+    ]
+}

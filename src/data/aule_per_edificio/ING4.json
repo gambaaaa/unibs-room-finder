@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec63",
+        "codice": "ING4",
+        "descrizione": "Via Bollani 20"
+    },
+    "aule": [
+        {
+            "capienza": 100,
+            "id": "65d5a905a1f6b400e1f1a324",
+            "codice": "B100",
+            "descrizione": "Bollani 100",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 65,
+            "id": "65d5a905a1f6b400e1f1a327",
+            "codice": "B65",
+            "descrizione": "Bollani 65",
+            "capienzaEffettiva": 65
+        },
+        {
+            "capienza": 80,
+            "id": "65d5a905a1f6b400e1f1a32a",
+            "codice": "B80",
+            "descrizione": "Bollani 80",
+            "capienzaEffettiva": 80
+        }
+    ]
+}

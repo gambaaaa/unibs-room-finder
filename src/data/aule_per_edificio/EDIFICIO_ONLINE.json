@@ -1,0 +1,23 @@
+{
+    "edificio": {
+        "id": "65aa3e36dadaf4925a975a47",
+        "codice": "EDIFICIO_ONLINE",
+        "descrizione": "Nessun edificio"
+    },
+    "aule": [
+        {
+            "capienza": 999,
+            "id": "65aa3e36dadaf4925a975a48",
+            "codice": "AULA_ONLINE",
+            "descrizione": "Nessun’aula",
+            "capienzaEffettiva": 999
+        },
+        {
+            "capienza": 999,
+            "id": "67adee882450633254bf216a",
+            "codice": "ESTERNA",
+            "descrizione": "Nessun’aula",
+            "capienzaEffettiva": 999
+        }
+    ]
+}

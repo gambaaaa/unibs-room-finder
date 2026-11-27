@@ -1,0 +1,93 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec30",
+        "codice": "ECO2",
+        "descrizione": "Via S. Faustino 64 - Brixia"
+    },
+    "aule": [
+        {
+            "capienza": 58,
+            "id": "65d5a904a1f6b400e1f1a2df",
+            "codice": "ECO024",
+            "descrizione": "LAB INF. 2",
+            "capienzaEffettiva": 58
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a904a1f6b400e1f1a2dc",
+            "codice": "ECO023",
+            "descrizione": "LAB INF. 1",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 30,
+            "id": "65d5aa92a1f6b400e1f1a5c0",
+            "codice": "ECO029",
+            "descrizione": "Aula D2",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa8fa1f6b400e1f1a539",
+            "codice": "ECO026",
+            "descrizione": "LAB INF. 4",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 25,
+            "id": "65d5aa92a1f6b400e1f1a5c3",
+            "codice": "ECO030",
+            "descrizione": "Aula D3",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 25,
+            "id": "65d5aa92a1f6b400e1f1a5c6",
+            "codice": "ECO031",
+            "descrizione": "Aula D4",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 18,
+            "id": "65d5aa92a1f6b400e1f1a5c9",
+            "codice": "ECO034",
+            "descrizione": "Aula R3",
+            "capienzaEffettiva": 18
+        },
+        {
+            "capienza": 15,
+            "id": "670e2e3a60fc72001eb68a43",
+            "codice": "SD",
+            "descrizione": "Aula SD (DISATTIVATA DA UP)",
+            "capienzaEffettiva": 15
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa8fa1f6b400e1f1a53c",
+            "codice": "ECO027",
+            "descrizione": "LAB INF. 5",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 172,
+            "id": "65d5aa19fb97c700a57f23fd",
+            "codice": "ECO028",
+            "descrizione": "Aula D1",
+            "capienzaEffettiva": 172
+        },
+        {
+            "capienza": 35,
+            "id": "65d5aa8fa1f6b400e1f1a536",
+            "codice": "ECO025",
+            "descrizione": "LAB INF. 3",
+            "capienzaEffettiva": 35
+        },
+        {
+            "capienza": 60,
+            "id": "65d5aa93a1f6b400e1f1a602",
+            "codice": "ECO032",
+            "descrizione": "Aula D5",
+            "capienzaEffettiva": 60
+        }
+    ]
+}

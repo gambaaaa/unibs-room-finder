@@ -1,0 +1,16 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec6f",
+        "codice": "MED-6",
+        "descrizione": "Centro Natatorio Mompiano"
+    },
+    "aule": [
+        {
+            "capienza": 100,
+            "id": "65d5a8a395ff13011395ed9b",
+            "codice": "MED60",
+            "descrizione": "Piscina di Mompiano",
+            "capienzaEffettiva": 100
+        }
+    ]
+}

@@ -1,0 +1,205 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec36",
+        "codice": "ING2",
+        "descrizione": "via Branze 43"
+    },
+    "aule": [
+        {
+            "capienza": 0,
+            "id": "65d5a8a095ff13011395ecd6",
+            "codice": "108",
+            "descrizione": "AULA RIUNIONI DICATAM",
+            "capienzaEffettiva": 0
+        },
+        {
+            "capienza": 0,
+            "id": "65d5a8a095ff13011395ecd9",
+            "codice": "109",
+            "descrizione": "AULA SEMINARI DICATAM",
+            "capienzaEffettiva": 0
+        },
+        {
+            "capienza": 75,
+            "id": "65d5a904a1f6b400e1f1a2f7",
+            "codice": "ING044",
+            "descrizione": "Aula B3.1",
+            "capienzaEffettiva": 75
+        },
+        {
+            "capienza": 83,
+            "id": "65d5a905a1f6b400e1f1a30c",
+            "codice": "ING025",
+            "descrizione": "Aula B0.4",
+            "capienzaEffettiva": 83
+        },
+        {
+            "capienza": 80,
+            "id": "65d5a905a1f6b400e1f1a321",
+            "codice": "ING048",
+            "descrizione": "SALA EVENTI CSMT",
+            "capienzaEffettiva": 80
+        },
+        {
+            "capienza": 99,
+            "id": "65d5a904a1f6b400e1f1a2f4",
+            "codice": "ING026",
+            "descrizione": "Aula B0.5",
+            "capienzaEffettiva": 99
+        },
+        {
+            "capienza": 24,
+            "id": "65d5a904a1f6b400e1f1a2fa",
+            "codice": "ING047",
+            "descrizione": "BLAB3",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 80,
+            "id": "65d5a905a1f6b400e1f1a309",
+            "codice": "ING024",
+            "descrizione": "Aula B0.3",
+            "capienzaEffettiva": 80
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa90a1f6b400e1f1a55d",
+            "codice": "ING031",
+            "descrizione": "Aula B1.6",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 53,
+            "id": "65d5aa93a1f6b400e1f1a5e1",
+            "codice": "ING038",
+            "descrizione": "Aula B2.5",
+            "capienzaEffettiva": 53
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa94a1f6b400e1f1a60b",
+            "codice": "ING041",
+            "descrizione": "Aula B2.8",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 58,
+            "id": "65d5aa95a1f6b400e1f1a626",
+            "codice": "ING043",
+            "descrizione": "Aula B2.10",
+            "capienzaEffettiva": 58
+        },
+        {
+            "capienza": 75,
+            "id": "65d5aa90a1f6b400e1f1a560",
+            "codice": "ING035",
+            "descrizione": "Aula B2.1",
+            "capienzaEffettiva": 75
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa93a1f6b400e1f1a5d5",
+            "codice": "ING032",
+            "descrizione": "Aula B1.7",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa94a1f6b400e1f1a605",
+            "codice": "ING039",
+            "descrizione": "Aula B2.6",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 53,
+            "id": "65d5aa90a1f6b400e1f1a55a",
+            "codice": "ING030",
+            "descrizione": "Aula B1.5",
+            "capienzaEffettiva": 53
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa95a1f6b400e1f1a62f",
+            "codice": "ING046",
+            "descrizione": "BLAB2",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 10,
+            "id": "65d5aa19fb97c700a57f2415",
+            "codice": "103",
+            "descrizione": "LABORATORIO SAR CSMT",
+            "capienzaEffettiva": 10
+        },
+        {
+            "capienza": 49,
+            "id": "65d5aa90a1f6b400e1f1a551",
+            "codice": "ING027",
+            "descrizione": "Aula B1.1",
+            "capienzaEffettiva": 49
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa93a1f6b400e1f1a5d8",
+            "codice": "ING033",
+            "descrizione": "Aula B1.8",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 53,
+            "id": "65d5aa90a1f6b400e1f1a557",
+            "codice": "ING029",
+            "descrizione": "Aula B1.4",
+            "capienzaEffettiva": 53
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa90a1f6b400e1f1a566",
+            "codice": "ING045",
+            "descrizione": "BLAB1",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa94a1f6b400e1f1a60e",
+            "codice": "ING042",
+            "descrizione": "Aula B2.9",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 53,
+            "id": "65d5aa90a1f6b400e1f1a554",
+            "codice": "ING028",
+            "descrizione": "Aula B1.2",
+            "capienzaEffettiva": 53
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa90a1f6b400e1f1a563",
+            "codice": "ING036",
+            "descrizione": "Aula B2.2",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa93a1f6b400e1f1a5db",
+            "codice": "ING034",
+            "descrizione": "Aula B1.9",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 33,
+            "id": "65d5aa94a1f6b400e1f1a608",
+            "codice": "ING040",
+            "descrizione": "Aula B2.7",
+            "capienzaEffettiva": 33
+        },
+        {
+            "capienza": 53,
+            "id": "65d5aa93a1f6b400e1f1a5de",
+            "codice": "ING037",
+            "descrizione": "Aula B2.4",
+            "capienzaEffettiva": 53
+        }
+    ]
+}

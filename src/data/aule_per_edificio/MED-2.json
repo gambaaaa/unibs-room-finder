@@ -1,0 +1,107 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec48",
+        "codice": "MED-2",
+        "descrizione": "Edificio Polifunzionale - Viale Europa 11"
+    },
+    "aule": [
+        {
+            "capienza": 246,
+            "id": "65d5a8a295ff13011395ed5a",
+            "codice": "MED023",
+            "descrizione": "A1",
+            "capienzaEffettiva": 246
+        },
+        {
+            "capienza": 149,
+            "id": "65d5a8a295ff13011395ed5d",
+            "codice": "MED024",
+            "descrizione": "A2",
+            "capienzaEffettiva": 149
+        },
+        {
+            "capienza": 21,
+            "id": "65d5a8a395ff13011395ed82",
+            "codice": "MED051",
+            "descrizione": "B5",
+            "capienzaEffettiva": 21
+        },
+        {
+            "capienza": 62,
+            "id": "65d5aa91a1f6b400e1f1a584",
+            "codice": "MED026",
+            "descrizione": "B2",
+            "capienzaEffettiva": 62
+        },
+        {
+            "capienza": 12,
+            "id": "65d5aa92a1f6b400e1f1a5b7",
+            "codice": "MED054",
+            "descrizione": "A3 - Sala Studio",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 62,
+            "id": "65d5aa91a1f6b400e1f1a587",
+            "codice": "MED027",
+            "descrizione": "B3",
+            "capienzaEffettiva": 62
+        },
+        {
+            "capienza": 246,
+            "id": "65d5aa94a1f6b400e1f1a614",
+            "codice": "MED029",
+            "descrizione": "C1",
+            "capienzaEffettiva": 246
+        },
+        {
+            "capienza": 62,
+            "id": "65d5aa94a1f6b400e1f1a617",
+            "codice": "MED030",
+            "descrizione": "C2",
+            "capienzaEffettiva": 62
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa94a1f6b400e1f1a620",
+            "codice": "MED033",
+            "descrizione": "C5",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 246,
+            "id": "65d5aa91a1f6b400e1f1a581",
+            "codice": "MED025",
+            "descrizione": "B1",
+            "capienzaEffettiva": 246
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa94a1f6b400e1f1a61d",
+            "codice": "MED032",
+            "descrizione": "C4",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa95a1f6b400e1f1a623",
+            "codice": "MED034",
+            "descrizione": "C6",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa91a1f6b400e1f1a58a",
+            "codice": "MED028",
+            "descrizione": "B4",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 62,
+            "id": "65d5aa94a1f6b400e1f1a61a",
+            "codice": "MED031",
+            "descrizione": "C3",
+            "capienzaEffettiva": 62
+        }
+    ]
+}

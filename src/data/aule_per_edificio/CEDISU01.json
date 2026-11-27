@@ -1,0 +1,23 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec57",
+        "codice": "CEDISU01",
+        "descrizione": "Viale Europa"
+    },
+    "aule": [
+        {
+            "capienza": 180,
+            "id": "65d5aa90a1f6b400e1f1a56c",
+            "codice": "ING060",
+            "descrizione": "Aula provvisoria presso Medicina",
+            "capienzaEffettiva": 180
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa91a1f6b400e1f1a56f",
+            "codice": "CEDISU02",
+            "descrizione": "Didattica valotti 1",
+            "capienzaEffettiva": 20
+        }
+    ]
+}

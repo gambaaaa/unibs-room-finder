@@ -1,0 +1,539 @@
+
+:root {
+  color-scheme: dark;
+  background: #111827;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #111827;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* INTESTAZIONI */
+
+.header {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.header h1 {
+  margin-bottom: 8px;
+  color: #f9fafb;
+  font-size: 2rem;
+}
+
+.header p,
+.section-heading p,
+.room p,
+.info {
+  color: #9ca3af;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #60a5fa;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+/* PANNELLI */
+
+.panel {
+  margin-bottom: 24px;
+  padding: 24px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 10px;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.panel h4 {
+  color: #f3f4f6;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* CAMPI DI RICERCA E MENU */
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  color: #f9fafb;
+  background: #111827;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  font-size: 1rem;
+  opacity: 1;
+}
+
+select option {
+  color: #f9fafb;
+  background: #1f2937;
+}
+
+input::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid #60a5fa;
+  border-color: #60a5fa;
+}
+
+/* INTESTAZIONI DELLE SEZIONI */
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+}
+
+.section-heading h2 {
+  margin-bottom: 6px;
+}
+
+.section-heading p {
+  margin-top: 0;
+}
+
+.count {
+  padding: 7px 12px;
+  color: #bfdbfe;
+  background: #1e3a5f;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ELENCO AULE */
+
+.rooms {
+  margin-top: 20px;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #374151;
+  text-align: left;
+}
+
+.room:last-child {
+  border-bottom: none;
+}
+
+.room h3 {
+  margin: 0 0 6px;
+  color: #f3f4f6;
+  font-size: 1rem;
+}
+
+.room p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.room > div:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+.room h3,
+.room p {
+  text-align: left;
+}
+
+/* AULE CLICCABILI */
+
+.room-link {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.room-link:hover {
+  background: #27364a;
+}
+
+/* CAPIENZA */
+
+.capacity {
+  display: flex;
+  min-width: 75px;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #9ca3af;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.capacity strong {
+  color: #f3f4f6;
+  font-size: 1.1rem;
+}
+
+/* MESSAGGI */
+
+.info {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.empty {
+  color: #9ca3af;
+  text-align: center;
+}
+
+.error {
+  color: #f87171;
+}
+
+/* GRIGLIA FACOLTÀ */
+
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.faculty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  color: #e5e7eb;
+  background: #273449;
+  border: 1px solid #3b4a60;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s,
+    border-color 0.2s, box-shadow 0.2s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-3px);
+  background: #304158;
+  border-color: #60a5fa;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-icon {
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.faculty-card h3 {
+  margin: 0 0 8px;
+  color: #f9fafb;
+}
+
+.faculty-card p {
+  margin: 0;
+  color: #b6c2d2;
+  font-size: 0.9rem;
+}
+
+/* QUINTO PULSANTE: RICERCA PROFESSORE */
+
+.professor-card {
+  grid-column: 1 / -1;
+}
+
+/* ELENCO EDIFICI */
+
+.building-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.building-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  color: #e5e7eb;
+  background: #273449;
+  border: 1px solid #3b4a60;
+  border-radius: 8px;
+  text-align: left;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.building-card:hover {
+  background: #304158;
+  border-color: #60a5fa;
+}
+
+.building-card > div {
+  flex: 1;
+  text-align: left;
+}
+
+.building-card h3,
+.building-card p {
+  text-align: left;
+}
+
+.building-card h3 {
+  margin: 0 0 5px;
+  color: #93c5fd;
+}
+
+.building-card p {
+  margin: 0;
+  color: #b6c2d2;
+  font-size: 0.9rem;
+}
+
+.building-arrow {
+  color: #60a5fa;
+  font-size: 1.4rem;
+}
+
+/* ORARIO DELLE LEZIONI */
+
+.lesson-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.lesson {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px;
+  background: #273449;
+  border: 1px solid #3b4a60;
+  border-radius: 8px;
+}
+
+.lesson-time {
+  display: flex;
+  min-width: 75px;
+  flex-direction: column;
+  color: #93c5fd;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.time-separator {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.lesson-info {
+  flex: 1;
+}
+
+.lesson-info h4 {
+  margin: 0 0 8px;
+  color: #f3f4f6;
+  font-size: 1rem;
+}
+
+.lesson-info p {
+  margin: 0;
+  color: #b6c2d2;
+  font-size: 0.9rem;
+}
+
+.no-events {
+  padding: 20px;
+  color: #b6c2d2;
+  background: #273449;
+  border: 1px solid #3b4a60;
+  border-radius: 8px;
+}
+
+.unavailable {
+  display: inline-block;
+  margin-top: 8px;
+  color: #f87171;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* OUTPUT JSON, SE PRESENTE */
+
+.json-output {
+  max-height: 500px;
+  padding: 16px;
+  overflow: auto;
+  color: #d1d5db;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 0;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .room {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .professor-card {
+    grid-column: auto;
+  }
+
+  .faculty-card {
+    padding: 20px;
+  }
+
+  .lesson {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .lesson-time {
+    min-width: 65px;
+    font-size: 0.9rem;
+  }
+}
+
+/* PULSANTE RICERCA PROFESSORE */
+.professor-card {
+  align-items: center;
+  text-align: center;
+}
+
+.professor-card h3,
+.professor-card p {
+  text-align: center;
+}
+
+/* SWITCH SELEZIONE TEMA */
+
+.theme-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  width: min(100% - 32px, 1000px);
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+.theme-label {
+  color: #9ca3af;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.theme-switch {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 6px;
+}
+
+.theme-switch button {
+  padding: 8px 13px;
+  color: #9ca3af;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-switch button.active {
+  color: #ffffff;
+  background: #374151;
+}
+
+.theme-switch button:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .theme-bar {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .theme-switch button {
+    padding: 8px 10px;
+  }
+}

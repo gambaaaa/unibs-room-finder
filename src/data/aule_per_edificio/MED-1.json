@@ -1,0 +1,198 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec45",
+        "codice": "MED-1",
+        "descrizione": "Edificio centrale - Viale Europa 11"
+    },
+    "aule": [
+        {
+            "capienza": 50,
+            "id": "65d5a8a295ff13011395ed79",
+            "codice": "MED048",
+            "descrizione": "LAB.BIOTECN.2 p.",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 60,
+            "id": "65d5a8a295ff13011395ed7c",
+            "codice": "MED049",
+            "descrizione": "Settorato Anatomia",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 122,
+            "id": "65d5a8a295ff13011395ed54",
+            "codice": "MED019",
+            "descrizione": "Sala Consiliare",
+            "capienzaEffettiva": 122
+        },
+        {
+            "capienza": 60,
+            "id": "65d5a8a295ff13011395ed76",
+            "codice": "MED047",
+            "descrizione": "LAB.BIOTECN.3 p.",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 70,
+            "id": "65d5a8a395ff13011395ed7f",
+            "codice": "MED050",
+            "descrizione": "Aula Microscopi",
+            "capienzaEffettiva": 70
+        },
+        {
+            "capienza": 600,
+            "id": "65d5a906a1f6b400e1f1a366",
+            "codice": "MED003",
+            "descrizione": "MAGNA",
+            "capienzaEffettiva": 600
+        },
+        {
+            "capienza": 140,
+            "id": "65d5a907a1f6b400e1f1a369",
+            "codice": "MED004",
+            "descrizione": "D",
+            "capienzaEffettiva": 140
+        },
+        {
+            "capienza": 212,
+            "id": "65d5a906a1f6b400e1f1a363",
+            "codice": "MED002",
+            "descrizione": "B",
+            "capienzaEffettiva": 212
+        },
+        {
+            "capienza": 212,
+            "id": "65d5a906a1f6b400e1f1a360",
+            "codice": "MED001",
+            "descrizione": "A",
+            "capienzaEffettiva": 212
+        },
+        {
+            "capienza": 140,
+            "id": "65d5a907a1f6b400e1f1a36f",
+            "codice": "MED006",
+            "descrizione": "F",
+            "capienzaEffettiva": 140
+        },
+        {
+            "capienza": 180,
+            "id": "65d5a907a1f6b400e1f1a36c",
+            "codice": "MED005",
+            "descrizione": "E",
+            "capienzaEffettiva": 180
+        },
+        {
+            "capienza": 6,
+            "id": "65d5aa92a1f6b400e1f1a5b1",
+            "codice": "MED052",
+            "descrizione": "Sala archivio Ex Presidenza",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 50,
+            "id": "65d5aa93a1f6b400e1f1a5f6",
+            "codice": "MED015",
+            "descrizione": "Q",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 50,
+            "id": "65d5aa93a1f6b400e1f1a5f9",
+            "codice": "MED017",
+            "descrizione": "S",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 50,
+            "id": "65d5aa94a1f6b400e1f1a611",
+            "codice": "MED016",
+            "descrizione": "R",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa91a1f6b400e1f1a57b",
+            "codice": "MED021",
+            "descrizione": "LAB2",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 100,
+            "id": "65d5a907a1f6b400e1f1a375",
+            "codice": "MED008",
+            "descrizione": "H",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 50,
+            "id": "65d5a907a1f6b400e1f1a37b",
+            "codice": "MED010",
+            "descrizione": "L",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 100,
+            "id": "65d5a907a1f6b400e1f1a372",
+            "codice": "MED007",
+            "descrizione": "G",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 12,
+            "id": "65d5aa91a1f6b400e1f1a578",
+            "codice": "MED020",
+            "descrizione": "LAB1",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 70,
+            "id": "65d5aa93a1f6b400e1f1a5fc",
+            "codice": "MED018",
+            "descrizione": "T",
+            "capienzaEffettiva": 70
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa91a1f6b400e1f1a575",
+            "codice": "MED012",
+            "descrizione": "N",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 6,
+            "id": "65d5aa92a1f6b400e1f1a5b4",
+            "codice": "MED053",
+            "descrizione": "Saletta riunioni Ex Presidenza",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 50,
+            "id": "65d5a907a1f6b400e1f1a378",
+            "codice": "MED009",
+            "descrizione": "I",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 60,
+            "id": "65d5a907a1f6b400e1f1a37e",
+            "codice": "MED014",
+            "descrizione": "P",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 60,
+            "id": "65d5aa91a1f6b400e1f1a572",
+            "codice": "MED011",
+            "descrizione": "M",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 24,
+            "id": "65d5aa91a1f6b400e1f1a57e",
+            "codice": "MED022",
+            "descrizione": "LAB3",
+            "capienzaEffettiva": 24
+        }
+    ]
+}

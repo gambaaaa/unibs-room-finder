@@ -1,0 +1,163 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec2d",
+        "codice": "ECO1",
+        "descrizione": "C.da S. Chiara 50"
+    },
+    "aule": [
+        {
+            "capienza": 44,
+            "id": "65d5a903a1f6b400e1f1a2c4",
+            "codice": "ECO004",
+            "descrizione": "Aula A2",
+            "capienzaEffettiva": 44
+        },
+        {
+            "capienza": 24,
+            "id": "65d5a905a1f6b400e1f1a30f",
+            "codice": "ECO019",
+            "descrizione": "Aula AL",
+            "capienzaEffettiva": 24
+        },
+        {
+            "capienza": 68,
+            "id": "65d5a903a1f6b400e1f1a2c1",
+            "codice": "ECO003",
+            "descrizione": "Aula A1",
+            "capienzaEffettiva": 68
+        },
+        {
+            "capienza": 308,
+            "id": "65d5a904a1f6b400e1f1a2d3",
+            "codice": "ECO017",
+            "descrizione": "Aula 'Livia Dancelli'",
+            "capienzaEffettiva": 308
+        },
+        {
+            "capienza": 25,
+            "id": "65d5a8a495ff13011395ede2",
+            "codice": "ECO020",
+            "descrizione": "Sala Riunioni 1 - Santa Chiara",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 12,
+            "id": "65d5a8a495ff13011395ede5",
+            "codice": "ECO021",
+            "descrizione": "Sala Riunioni 2 - Santa Chiara",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 49,
+            "id": "65d5a903a1f6b400e1f1a2d0",
+            "codice": "ECO016",
+            "descrizione": "Aula C1",
+            "capienzaEffettiva": 49
+        },
+        {
+            "capienza": 118,
+            "id": "65d5a905a1f6b400e1f1a312",
+            "codice": "ECO012",
+            "descrizione": "Aula B4",
+            "capienzaEffettiva": 118
+        },
+        {
+            "capienza": 200,
+            "id": "65d5a906a1f6b400e1f1a339",
+            "codice": "ECO022",
+            "descrizione": "Chiostro Santa Chiara",
+            "capienzaEffettiva": 200
+        },
+        {
+            "capienza": 28,
+            "id": "65d5a906a1f6b400e1f1a348",
+            "codice": "ECO002",
+            "descrizione": "LAB INF Santa Chiara",
+            "capienzaEffettiva": 28
+        },
+        {
+            "capienza": 38,
+            "id": "65d5a903a1f6b400e1f1a2c7",
+            "codice": "ECO009",
+            "descrizione": "Aula B1",
+            "capienzaEffettiva": 38
+        },
+        {
+            "capienza": 48,
+            "id": "65d5a903a1f6b400e1f1a2ca",
+            "codice": "ECO010",
+            "descrizione": "Aula B2",
+            "capienzaEffettiva": 48
+        },
+        {
+            "capienza": 208,
+            "id": "65d5a903a1f6b400e1f1a2be",
+            "codice": "ECO001",
+            "descrizione": "Aula Magna Santa Chiara",
+            "capienzaEffettiva": 208
+        },
+        {
+            "capienza": 68,
+            "id": "65d5a903a1f6b400e1f1a2cd",
+            "codice": "ECO011",
+            "descrizione": "Aula B3",
+            "capienzaEffettiva": 68
+        },
+        {
+            "capienza": 110,
+            "id": "65d5aa8fa1f6b400e1f1a527",
+            "codice": "ECO005",
+            "descrizione": "Aula A3",
+            "capienzaEffettiva": 110
+        },
+        {
+            "capienza": 166,
+            "id": "65d5aa8fa1f6b400e1f1a533",
+            "codice": "ECO014",
+            "descrizione": "Aula B6",
+            "capienzaEffettiva": 166
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa8fa1f6b400e1f1a52d",
+            "codice": "ECO007",
+            "descrizione": "Aula A5",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 118,
+            "id": "65d5aa8fa1f6b400e1f1a530",
+            "codice": "ECO013",
+            "descrizione": "Aula B5",
+            "capienzaEffettiva": 118
+        },
+        {
+            "capienza": 192,
+            "id": "65d5aa93a1f6b400e1f1a5ff",
+            "codice": "ECO015",
+            "descrizione": "Aula B7",
+            "capienzaEffettiva": 192
+        },
+        {
+            "capienza": 21,
+            "id": "65d5aa90a1f6b400e1f1a569",
+            "codice": "ECO008",
+            "descrizione": "Aula A6",
+            "capienzaEffettiva": 21
+        },
+        {
+            "capienza": 308,
+            "id": "65d5aa19fb97c700a57f23fa",
+            "codice": "ECO018",
+            "descrizione": "Aula C3",
+            "capienzaEffettiva": 308
+        },
+        {
+            "capienza": 150,
+            "id": "65d5aa8fa1f6b400e1f1a52a",
+            "codice": "ECO006",
+            "descrizione": "Aula A4",
+            "capienzaEffettiva": 150
+        }
+    ]
+}

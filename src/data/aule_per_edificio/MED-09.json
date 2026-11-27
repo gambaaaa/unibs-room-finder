@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "6978b522796ded001e6ccb0f",
+        "codice": "MED-9",
+        "descrizione": "Villa Grasselli"
+    },
+    "aule": [
+        {
+            "capienza": 28,
+            "id": "697b1ad156d6f4001ef3630b",
+            "codice": "MED062",
+            "descrizione": "Grasselli 2",
+            "capienzaEffettiva": 28
+        },
+        {
+            "capienza": 28,
+            "id": "697b1af1c425840018b94307",
+            "codice": "MED063",
+            "descrizione": "Grasselli 3",
+            "capienzaEffettiva": 28
+        },
+        {
+            "capienza": 28,
+            "id": "697b1a9d796ded001e6d00d2",
+            "codice": "MED061",
+            "descrizione": "Grasselli 1",
+            "capienzaEffettiva": 28
+        }
+    ]
+}

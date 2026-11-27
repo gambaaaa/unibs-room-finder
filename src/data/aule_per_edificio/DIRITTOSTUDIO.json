@@ -1,0 +1,16 @@
+{
+    "edificio": {
+        "id": "6798aa787ee4ef001ee245db",
+        "codice": "DIRITTOSTUDIO",
+        "descrizione": "Diritto Studio - Viale Europa 39"
+    },
+    "aule": [
+        {
+            "capienza": 35,
+            "id": "67c959f1c377f3001e2a86b8",
+            "codice": "DIRSTUD001",
+            "descrizione": "Aula Didattica Valotti 1",
+            "capienzaEffettiva": 35
+        }
+    ]
+}

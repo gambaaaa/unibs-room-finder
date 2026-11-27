@@ -1,0 +1,205 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec33",
+        "codice": "ING1",
+        "descrizione": "via Branze 38"
+    },
+    "aule": [
+        {
+            "capienza": 2000,
+            "id": "65d5a8a495ff13011395edc6",
+            "codice": "ON LINE",
+            "descrizione": "Aula on line",
+            "capienzaEffettiva": 2000
+        },
+        {
+            "capienza": 144,
+            "id": "65d5a904a1f6b400e1f1a2e5",
+            "codice": "ING001",
+            "descrizione": "Sala Consiliare",
+            "capienzaEffettiva": 144
+        },
+        {
+            "capienza": 80,
+            "id": "65d5a904a1f6b400e1f1a2eb",
+            "codice": "ING004",
+            "descrizione": "TB",
+            "capienzaEffettiva": 80
+        },
+        {
+            "capienza": 20,
+            "id": "65d5a906a1f6b400e1f1a34b",
+            "codice": "LAB_ING0009",
+            "descrizione": "Laboratorio",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 84,
+            "id": "65d5a904a1f6b400e1f1a2e8",
+            "codice": "ING003",
+            "descrizione": "TA",
+            "capienzaEffettiva": 84
+        },
+        {
+            "capienza": 210,
+            "id": "65d5a904a1f6b400e1f1a2ee",
+            "codice": "ING006",
+            "descrizione": "Aula N.1",
+            "capienzaEffettiva": 210
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a905a1f6b400e1f1a300",
+            "codice": "ING018",
+            "descrizione": "ELE2",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 520,
+            "id": "65d5a904a1f6b400e1f1a2e2",
+            "codice": "ING002",
+            "descrizione": "Aula Magna",
+            "capienzaEffettiva": 520
+        },
+        {
+            "capienza": 57,
+            "id": "65d5a904a1f6b400e1f1a2fd",
+            "codice": "ING017",
+            "descrizione": "ELE1",
+            "capienzaEffettiva": 57
+        },
+        {
+            "capienza": 25,
+            "id": "65d5a906a1f6b400e1f1a345",
+            "codice": "LAB OPTOELETTRONICA",
+            "descrizione": "Laboratorio Optoelettronica",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 208,
+            "id": "65d5a904a1f6b400e1f1a2f1",
+            "codice": "ING007",
+            "descrizione": "Aula N.2",
+            "capienzaEffettiva": 208
+        },
+        {
+            "capienza": 85,
+            "id": "65d5aa19fb97c700a57f2400",
+            "codice": "ING005",
+            "descrizione": "TC",
+            "capienzaEffettiva": 85
+        },
+        {
+            "capienza": 44,
+            "id": "65d5aa90a1f6b400e1f1a548",
+            "codice": "ING011",
+            "descrizione": "Aula N.6",
+            "capienzaEffettiva": 44
+        },
+        {
+            "capienza": 120,
+            "id": "65d5aa90a1f6b400e1f1a54e",
+            "codice": "ING013",
+            "descrizione": "Aula N.8",
+            "capienzaEffettiva": 120
+        },
+        {
+            "capienza": 10,
+            "id": "65d5aa92a1f6b400e1f1a5bd",
+            "codice": "S43",
+            "descrizione": "Sala Commissioni",
+            "capienzaEffettiva": 10
+        },
+        {
+            "capienza": 30,
+            "id": "65d5aa19fb97c700a57f2412",
+            "codice": "ING021",
+            "descrizione": "LAB ROBOTICA",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 44,
+            "id": "65d5aa90a1f6b400e1f1a54b",
+            "codice": "ING012",
+            "descrizione": "Aula N.7",
+            "capienzaEffettiva": 44
+        },
+        {
+            "capienza": 60,
+            "id": "65d5aa93a1f6b400e1f1a5e4",
+            "codice": "ING019",
+            "descrizione": "Aula CAD Multifunzionale",
+            "capienzaEffettiva": 60
+        },
+        {
+            "capienza": 180,
+            "id": "65d5aa92a1f6b400e1f1a5cc",
+            "codice": "ING014",
+            "descrizione": "Aula N.9",
+            "capienzaEffettiva": 180
+        },
+        {
+            "capienza": 100,
+            "id": "65d5aa92a1f6b400e1f1a5cf",
+            "codice": "ING015",
+            "descrizione": "Aula N.10",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 120,
+            "id": "65d5aa90a1f6b400e1f1a545",
+            "codice": "ING010",
+            "descrizione": "Aula N.5",
+            "capienzaEffettiva": 120
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa93a1f6b400e1f1a5ed",
+            "codice": "106",
+            "descrizione": "AULA RIUNIONI DIMI",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 210,
+            "id": "65d5aa8fa1f6b400e1f1a53f",
+            "codice": "ING008",
+            "descrizione": "Aula N.3",
+            "capienzaEffettiva": 210
+        },
+        {
+            "capienza": 210,
+            "id": "65d5aa90a1f6b400e1f1a542",
+            "codice": "ING009",
+            "descrizione": "Aula N.4",
+            "capienzaEffettiva": 210
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa93a1f6b400e1f1a5e7",
+            "codice": "79",
+            "descrizione": "AMV DIMI",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 40,
+            "id": "65d5aa93a1f6b400e1f1a5f0",
+            "codice": "107",
+            "descrizione": "AULA SEMINARI DIMI",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 18,
+            "id": "65d5aa19fb97c700a57f2418",
+            "codice": "ING020",
+            "descrizione": "LAB SENSORI",
+            "capienzaEffettiva": 18
+        },
+        {
+            "capienza": 100,
+            "id": "65d5aa93a1f6b400e1f1a5d2",
+            "codice": "ING016",
+            "descrizione": "Aula N.11",
+            "capienzaEffettiva": 100
+        }
+    ]
+}

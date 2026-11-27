@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "674584a9addfc9001e42e9c7",
+        "codice": "ANGUILLA",
+        "descrizione": "Biblioteca di Economia e Giurisprudenza"
+    },
+    "aule": [
+        {
+            "capienza": 6,
+            "id": "67458601addfc9001e42ea42",
+            "codice": "BIBLIOECOJURIC",
+            "descrizione": "Saletta C",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 4,
+            "id": "6745856fb437be00191353ef",
+            "codice": "BIBLIOECOJURIA",
+            "descrizione": "Saletta A",
+            "capienzaEffettiva": 4
+        },
+        {
+            "capienza": 6,
+            "id": "674585deb219500019481724",
+            "codice": "BIBLIOECOJURIB",
+            "descrizione": "Saletta B",
+            "capienzaEffettiva": 6
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec4b",
+        "codice": "MED-3",
+        "descrizione": "Palazzetto: V.le Europa 13"
+    },
+    "aule": [
+        {
+            "capienza": 28,
+            "id": "65d5aa91a1f6b400e1f1a590",
+            "codice": "MED036",
+            "descrizione": "AULA 2",
+            "capienzaEffettiva": 28
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa91a1f6b400e1f1a593",
+            "codice": "MED037",
+            "descrizione": "AULA 3",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 6,
+            "id": "65d5aa91a1f6b400e1f1a59c",
+            "codice": "MED040",
+            "descrizione": "AULA 6",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 6,
+            "id": "65d5aa92a1f6b400e1f1a59f",
+            "codice": "MED041",
+            "descrizione": "AULA 7",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 25,
+            "id": "65d5aa92a1f6b400e1f1a5a5",
+            "codice": "MED043",
+            "descrizione": "AULA 9",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 18,
+            "id": "65d5aa92a1f6b400e1f1a5ae",
+            "codice": "MED046",
+            "descrizione": "AULA 12",
+            "capienzaEffettiva": 18
+        },
+        {
+            "capienza": 20,
+            "id": "65d5aa92a1f6b400e1f1a5ab",
+            "codice": "MED045",
+            "descrizione": "AULA 11",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 15,
+            "id": "65d5aa92a1f6b400e1f1a5a2",
+            "codice": "MED042",
+            "descrizione": "AULA 8",
+            "capienzaEffettiva": 15
+        },
+        {
+            "capienza": 12,
+            "id": "65d5aa92a1f6b400e1f1a5a8",
+            "codice": "MED044",
+            "descrizione": "AULA 10",
+            "capienzaEffettiva": 12
+        },
+        {
+            "capienza": 222,
+            "id": "65d5aa91a1f6b400e1f1a58d",
+            "codice": "MED035",
+            "descrizione": "AULA 1 - MAGNA",
+            "capienzaEffettiva": 222
+        },
+        {
+            "capienza": 15,
+            "id": "65d5aa91a1f6b400e1f1a599",
+            "codice": "MED039",
+            "descrizione": "AULA 5",
+            "capienzaEffettiva": 15
+        },
+        {
+            "capienza": 30,
+            "id": "65d5aa92a1f6b400e1f1a5ba",
+            "codice": "MED-ESE-001",
+            "descrizione": "AULA ESERCITAZIONI",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 18,
+            "id": "65d5aa91a1f6b400e1f1a596",
+            "codice": "MED038",
+            "descrizione": "AULA 4",
+            "capienzaEffettiva": 18
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "edificio": {
+        "id": "670e2e3660fc72001eb688ac",
+        "codice": "CASA MERCANTI",
+        "descrizione": "Casa dei Mercanti - Corso Mameli, 27"
+    },
+    "aule": [
+        {
+            "capienza": 18,
+            "id": "67371df151c611001977d568",
+            "codice": "JUSMERCANTI",
+            "descrizione": "Sala Studio",
+            "capienzaEffettiva": 18
+        }
+    ]
+}

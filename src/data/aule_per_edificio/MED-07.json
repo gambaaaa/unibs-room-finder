@@ -1,0 +1,16 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec75",
+        "codice": "MED-7",
+        "descrizione": "Centro Natatorio Lamarmora"
+    },
+    "aule": [
+        {
+            "capienza": 100,
+            "id": "65d5a8a395ff13011395eda7",
+            "codice": "MED65",
+            "descrizione": "Piscina di Lamarmora",
+            "capienzaEffettiva": 100
+        }
+    ]
+}

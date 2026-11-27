@@ -1,0 +1,65 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec78",
+        "codice": "MED-8",
+        "descrizione": "IIS Lunardi"
+    },
+    "aule": [
+        {
+            "capienza": 31,
+            "id": "65d5a8a495ff13011395edb6",
+            "codice": "MED70",
+            "descrizione": "B04",
+            "capienzaEffettiva": 31
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a495ff13011395edbf",
+            "codice": "MED73",
+            "descrizione": "B13",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a495ff13011395edb0",
+            "codice": "MED68",
+            "descrizione": "B02 Lunardi",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a495ff13011395edb9",
+            "codice": "MED71",
+            "descrizione": "B11",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 110,
+            "id": "65d5a8a395ff13011395edaa",
+            "codice": "MED66",
+            "descrizione": "A01-AUDITORIUM",
+            "capienzaEffettiva": 110
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a495ff13011395edb3",
+            "codice": "MED69",
+            "descrizione": "B03 Lunardi",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 50,
+            "id": "65d5a8a495ff13011395edad",
+            "codice": "MED67",
+            "descrizione": "A15",
+            "capienzaEffettiva": 50
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a8a495ff13011395edbc",
+            "codice": "MED72",
+            "descrizione": "B12",
+            "capienzaEffettiva": 30
+        }
+    ]
+}

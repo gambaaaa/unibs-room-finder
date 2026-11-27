@@ -1,0 +1,65 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec69",
+        "codice": "MED-4",
+        "descrizione": "Impianti sportivi"
+    },
+    "aule": [
+        {
+            "capienza": 40,
+            "id": "65d5a8a395ff13011395eda1",
+            "codice": "MED62",
+            "descrizione": "palestra Gialla",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 25,
+            "id": "65d5a8a395ff13011395eda4",
+            "codice": "MED63",
+            "descrizione": "Palestra Soppalcata",
+            "capienzaEffettiva": 25
+        },
+        {
+            "capienza": 70,
+            "id": "65d5a8a395ff13011395ed98",
+            "codice": "MED37",
+            "descrizione": "Sala Pesi",
+            "capienzaEffettiva": 70
+        },
+        {
+            "capienza": 80,
+            "id": "65d5a8a395ff13011395ed8b",
+            "codice": "MED056",
+            "descrizione": "PalaEuropa",
+            "capienzaEffettiva": 80
+        },
+        {
+            "capienza": 150,
+            "id": "65d5a8a395ff13011395ed88",
+            "codice": "MED055",
+            "descrizione": "Palestra Spettacolare CUS",
+            "capienzaEffettiva": 150
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a8a495ff13011395edc2",
+            "codice": "MED74",
+            "descrizione": "Laboratorio Inception",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 40,
+            "id": "65d5a8a395ff13011395ed9e",
+            "codice": "MED61",
+            "descrizione": "Palestra Verde",
+            "capienzaEffettiva": 40
+        },
+        {
+            "capienza": 20,
+            "id": "6746dd0fae7e77001d4a3414",
+            "codice": "MED64",
+            "descrizione": "Sala Potenziamento",
+            "capienzaEffettiva": 20
+        }
+    ]
+}

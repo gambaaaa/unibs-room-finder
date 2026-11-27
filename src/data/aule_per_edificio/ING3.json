@@ -1,0 +1,30 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec39",
+        "codice": "ING3",
+        "descrizione": "via Valotti 9"
+    },
+    "aule": [
+        {
+            "capienza": 0,
+            "id": "65d5a905a1f6b400e1f1a306",
+            "codice": "105",
+            "descrizione": "OFFICINA MECCANICA",
+            "capienzaEffettiva": 0
+        },
+        {
+            "capienza": 6,
+            "id": "65d5a905a1f6b400e1f1a303",
+            "codice": "101",
+            "descrizione": "LAB MATE DICATAM",
+            "capienzaEffettiva": 6
+        },
+        {
+            "capienza": 60,
+            "id": "69492c9e2969ec002e1d47e9",
+            "codice": "ING061",
+            "descrizione": "Laboratorio di automazione",
+            "capienzaEffettiva": 60
+        }
+    ]
+}

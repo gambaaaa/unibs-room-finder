@@ -1,0 +1,44 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec3c",
+        "codice": "ING6",
+        "descrizione": "via Valotti 11"
+    },
+    "aule": [
+        {
+            "capienza": 260,
+            "id": "65d5aa19fb97c700a57f240f",
+            "codice": "ING051",
+            "descrizione": "M1",
+            "capienzaEffettiva": 260
+        },
+        {
+            "capienza": 168,
+            "id": "65d5aa19fb97c700a57f240c",
+            "codice": "ING050",
+            "descrizione": "MTB",
+            "capienzaEffettiva": 168
+        },
+        {
+            "capienza": 54,
+            "id": "65d5aa19fb97c700a57f2406",
+            "codice": "ING053",
+            "descrizione": "MLAB 2",
+            "capienzaEffettiva": 54
+        },
+        {
+            "capienza": 168,
+            "id": "65d5aa19fb97c700a57f2409",
+            "codice": "ING049",
+            "descrizione": "MTA",
+            "capienzaEffettiva": 168
+        },
+        {
+            "capienza": 80,
+            "id": "65d5aa19fb97c700a57f2403",
+            "codice": "ING052",
+            "descrizione": "MLAB 1",
+            "capienzaEffettiva": 80
+        }
+    ]
+}

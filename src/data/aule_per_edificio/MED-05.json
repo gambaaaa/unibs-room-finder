@@ -1,0 +1,37 @@
+{
+    "edificio": {
+        "id": "65d5a89f95ff13011395ec6c",
+        "codice": "MED-5",
+        "descrizione": "Impianti sportivi Abba-Tartaglia"
+    },
+    "aule": [
+        {
+            "capienza": 100,
+            "id": "65d5a8a395ff13011395ed91",
+            "codice": "MED058",
+            "descrizione": "Campo di rugby",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 100,
+            "id": "65d5a8a395ff13011395ed95",
+            "codice": "MED059",
+            "descrizione": "Campo di ateltica",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 100,
+            "id": "65d5a8a395ff13011395ed8e",
+            "codice": "MED057",
+            "descrizione": "Campo di calcio",
+            "capienzaEffettiva": 100
+        },
+        {
+            "capienza": 36,
+            "id": "6978802e56d6f4001ef31568",
+            "codice": "MED060",
+            "descrizione": "Campi di Padel",
+            "capienzaEffettiva": 36
+        }
+    ]
+}

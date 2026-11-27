@@ -1,0 +1,58 @@
+{
+    "edificio": {
+        "id": "65d5a89e95ff13011395ec4e",
+        "codice": "ECO3",
+        "descrizione": "Via S. Faustino 74/b"
+    },
+    "aule": [
+        {
+            "capienza": 10,
+            "id": "65d5a8a495ff13011395edd6",
+            "codice": "ECO041",
+            "descrizione": "Aula SA",
+            "capienzaEffettiva": 10
+        },
+        {
+            "capienza": 144,
+            "id": "65d5a904a1f6b400e1f1a2d6",
+            "codice": "ECO038",
+            "descrizione": "Aula Magna San Faustino",
+            "capienzaEffettiva": 144
+        },
+        {
+            "capienza": 64,
+            "id": "65d5a904a1f6b400e1f1a2d9",
+            "codice": "ECO039",
+            "descrizione": "Sala della Biblioteca",
+            "capienzaEffettiva": 64
+        },
+        {
+            "capienza": 20,
+            "id": "65d5a8a495ff13011395eddf",
+            "codice": "ECO040",
+            "descrizione": "Sala Riunioni - San Faustino",
+            "capienzaEffettiva": 20
+        },
+        {
+            "capienza": 200,
+            "id": "65d5a906a1f6b400e1f1a33c",
+            "codice": "ECO044",
+            "descrizione": "Chiostro San Faustino",
+            "capienzaEffettiva": 200
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a905a1f6b400e1f1a31b",
+            "codice": "ECO042",
+            "descrizione": "Aula Studio Piano Terra",
+            "capienzaEffettiva": 30
+        },
+        {
+            "capienza": 30,
+            "id": "65d5a905a1f6b400e1f1a31e",
+            "codice": "ECO043",
+            "descrizione": "Aula Studio Primo Piano",
+            "capienzaEffettiva": 30
+        }
+    ]
+}
